@@ -1,4 +1,29 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.greyShadow {
+  box-shadow: 0px 30px 30px -4px rgba(16, 49, 77, 0.06),
+    0px 13.6px 13.6px -3.3px rgba(16, 49, 77, 0.16),
+    0px 6.8px 6.8px -2.6px rgba(16, 49, 77, 0.2),
+    0px 3.6px 3.6px -2px rgba(16, 49, 77, 0.22),
+    0px 1.8px 1.8px -1.3px rgba(16, 49, 77, 0.23),
+    0px 0.7px 0.7px -0.6px rgba(16, 49, 77, 0.24);
+}
+
+.heroTextGradient {
+  background: linear-gradient(180deg, #0e1c29 0%, #31628f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.heroBGGradient {
+  background: radial-gradient(100% 293.88% at 0% 0%, #d1d1d1 0%, #f6fbff 100%);
 }

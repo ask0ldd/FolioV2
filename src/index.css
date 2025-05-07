@@ -3,6 +3,8 @@
 :root {
   line-height: 1.5;
   font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 
   color-scheme: light dark;
   color: #0e1c29;
@@ -17,7 +19,64 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  width: 100%;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.instrument {
+  font-family: "Instrument Serif", serif;
+}
+
+.blueButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 22px;
+  gap: 12px;
+
+  width: 160px;
+  height: 48px;
+
+  background: linear-gradient(
+    90.89deg,
+    #2d1546 0.77%,
+    #0e1c43 50.15%,
+    #25346c 99.53%
+  );
+  box-shadow: 0px 0.7px 0.7px -0.6px rgba(46, 64, 128, 0.24),
+    0px 1.8px 1.8px -1.3px rgba(46, 64, 128, 0.23),
+    0px 3.6px 3.6px -2px rgba(46, 64, 128, 0.22),
+    0px 6.8px 6.8px -2.6px rgba(46, 64, 128, 0.2),
+    0px 13.6px 13.6px -3.3px rgba(46, 64, 128, 0.16),
+    0px 30px 30px -4px rgba(46, 64, 128, 0.06), inset 0px 1px 2px #b8c1e6;
+  border-radius: 10px;
+}
+
+.greyButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 22px;
+  gap: 10px;
+
+  width: 160px;
+  height: 48px;
+
+  background: linear-gradient(
+    93.26deg,
+    #c8d4df 1.85%,
+    #e9f0f7 62.25%,
+    #f1f8fe 100%
+  );
+  box-shadow: 0px 0.7px 0.7px -0.6px rgba(121, 152, 189, 0.24),
+    0px 1.8px 1.8px -1.3px rgba(121, 152, 189, 0.23),
+    0px 3.6px 3.6px -2px rgba(121, 152, 189, 0.22),
+    0px 6.8px 6.8px -2.6px rgba(121, 152, 189, 0.2),
+    0px 13.6px 13.6px -3.3px rgba(121, 152, 189, 0.16),
+    0px 30px 30px -4px rgba(121, 152, 189, 0.06), inset 0px 2px 4px #ffffff;
+  border-radius: 10px;
 }
