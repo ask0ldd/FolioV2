@@ -27,3 +27,168 @@
 .heroBGGradient {
   background: radial-gradient(100% 293.88% at 0% 0%, #d1d1d1 0%, #f6fbff 100%);
 }
+
+.cloudIcon {
+  background-image: url("../assets/cloudIcon.jpg");
+}
+
+.moonIcon {
+  background-image: url("../assets/moonIcon.jpg");
+}
+
+.ray1 {
+  height: 1269px;
+  left: calc(33.58333333333336% - min(960px, 591px) / 2);
+  width: 591px;
+  position: absolute;
+  top: -209px;
+  transform: skewX(45deg);
+  background: linear-gradient(
+    180deg,
+    #ffffff80,
+    #fff 83.93442622950819%,
+    #fff0
+  );
+  mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 20.036247184684683%,
+      rgba(0, 0, 0, 0) 36.17504222972973%,
+      rgb(0, 0, 0) 55.4054054054054%,
+      rgba(0, 0, 0, 0.13) 67.11711711711712%,
+      rgba(0, 0, 0, 1) 78.23057432432432%,
+      rgba(0, 0, 0, 0) 97.2972972972973%
+    )
+    add;
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.ray2 {
+  height: 1269px;
+  left: calc(-1.4999999999999778% - min(960px, 582px) / 2);
+  width: 582px;
+  position: absolute;
+  top: -209px;
+  transform: skewX(45deg);
+  background: linear-gradient(
+    180deg,
+    #ffffff80,
+    #fff 83.93442622950819%,
+    #fff0
+  );
+  mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 11.398507882882884%,
+      rgb(0, 0, 0) 25.557784346846844%,
+      rgba(0, 0, 0, 0.55) 41.696579391891895%,
+      rgba(0, 0, 0, 0.13) 67.11711711711712%,
+      rgba(0, 0, 0, 1) 78.23057432432432%,
+      rgba(0, 0, 0, 0) 97.2972972972973%
+    )
+    add;
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.ray3 {
+  height: 1269px;
+  left: calc(33.666666666666686% - min(960px, 441px) / 2);
+  width: 441px;
+  position: absolute;
+  top: -209px;
+  transform: skewX(45deg);
+  background: linear-gradient(
+    180deg,
+    #ffffff80,
+    #fff 83.93442622950819%,
+    #fff0
+  );
+  mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 9.814893018018019%,
+      rgb(0, 0, 0) 20.036247184684683%,
+      rgba(0, 0, 0, 0.55) 28.58776745495496%,
+      rgba(0, 0, 0, 0.42462) 40.090090090090094%,
+      rgb(0, 0, 0) 48.64864864864865%,
+      rgba(0, 0, 0, 0.26749) 54.5045045045045%,
+      rgba(0, 0, 0, 0.13) 78.5789695945946%,
+      rgba(0, 0, 0, 1) 88.55398367117117%,
+      rgba(0, 0, 0, 0) 97.2972972972973%
+    )
+    add;
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.ray4 {
+  height: 1269px;
+  left: calc(50.08333333333336% - min(960px, 683px) / 2);
+  width: 683px;
+  position: absolute;
+  top: -209px;
+  transform: skewX(45deg);
+  background: linear-gradient(
+    180deg,
+    #ffffff80,
+    #fff 83.93442622950819%,
+    #fff0
+  );
+  mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 17.659065315315313%,
+      rgba(0, 0, 0, 0.55) 26.641680743243246%,
+      rgb(0, 0, 0) 35.230152027027025%,
+      rgba(0, 0, 0, 0) 47.69847972972973%,
+      rgba(0, 0, 0, 0.13) 69.17757601351352%,
+      rgba(0, 0, 0, 1) 79.1455518018018%,
+      rgba(0, 0, 0, 0) 97.2972972972973%
+    )
+    add;
+  overflow: hidden;
+  max-width: 960px;
+  opacity: 0.6;
+}
+
+.ray5 {
+  height: 1269px;
+  left: calc(49.08333333333336% - min(960px, 426px) / 2);
+  width: 426px;
+  position: absolute;
+  top: -209px;
+  transform: skewX(45deg);
+  background: linear-gradient(
+    180deg,
+    #ffffff80,
+    #fff 83.93442622950819%,
+    #fff0
+  );
+  mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 20.036247184684683%,
+      rgba(0, 0, 0, 0.55) 27.577773085585587%,
+      rgb(0, 0, 0) 42.34234234234234%,
+      rgba(0, 0, 0, 0) 48.60465934684685%,
+      rgba(0, 0, 0, 0.13) 67.11711711711712%,
+      rgba(0, 0, 0, 1) 74.95249155405406%,
+      rgb(0, 0, 0) 82.43243243243244%,
+      rgba(0, 0, 0, 0.4725) 88.671875%,
+      rgba(0, 0, 0, 0) 97.2972972972973%
+    )
+    add;
+  overflow: hidden;
+  max-width: 960px;
+  opacity: 0.75;
+}
+
+.carousselImg {
+  @apply h-[322px] w-[445px] rounded-[10px];
+  box-shadow: 0px 30px 30px -4px rgba(16, 49, 77, 0.06),
+    0px 13.6px 13.6px -3.3px rgba(16, 49, 77, 0.16),
+    0px 6.8px 6.8px -2.6px rgba(16, 49, 77, 0.2),
+    0px 3.6px 3.6px -2px rgba(16, 49, 77, 0.22),
+    0px 1.8px 1.8px -1.3px rgba(16, 49, 77, 0.23),
+    0px 0.7px 0.7px -0.6px rgba(16, 49, 77, 0.24);
+}
