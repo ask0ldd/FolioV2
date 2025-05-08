@@ -1,7 +1,14 @@
 import './App.css'
 import design1 from '../assets/design1.jpg'
+import { useEffect, useState } from 'react'
 
 function App() {
+
+  const [visible, setVisible] = useState<boolean>(false)
+
+  useEffect(() => {
+    if(!visible) setVisible(true)
+  }, [])
 
   return (
     <div className='bg-[#E1E7EC] w-full min-h-[100vh]'>
@@ -9,13 +16,13 @@ function App() {
         {<div className='opacity-55 absolute w-full h-full heroBGGradient z-0'>
           <div className='ray1 z-0'></div><div className='ray2 z-0'></div><div className='ray3 z-0'></div><div className='ray4 z-0'></div><div className='ray5 z-0'></div>
         </div>}
-        <header className='flex w-full justify-between h-[80px] items-center max-w-[1280px] z-10'>
-          <span className='text-[26px] dancing'>
-            Cedric B-Efflam
+        <header className={visible ? 'flex w-full justify-between h-[80px] translate-y-[0px] opacity-100 items-center max-w-[1280px] z-10 headerTransition' : 'flex w-full justify-between h-[80px] translate-y-[-100px] opacity-0 items-center max-w-[1280px] z-10 headerTransition'} >
+          <span className='text-[26px] dancing font-bold'>
+            Cedric Efflam
           </span>
           <div className='flex flex-row gap-x-[20px]'>
             <span className='text-[14px]'>
-              Available for Work
+              available for work
             </span>
             <div className='bg-[#5E788F] w-[1px] h-[24px]'></div>
             <div className='flex flex-row gap-x-[15px]'>
@@ -33,23 +40,23 @@ function App() {
           </div>
         </header>
         <section className='flex flex-col w-full pt-[60px] pb-[100px] items-center z-10'>
-          <div className='flex flex-row gap-x-[20px] items-center'>
+          <div className={'flex flex-row gap-x-[20px] items-center heroTextTransition' + (visible ? ' translate-x-[0px] opacity-100 delay1s' : ' translate-x-[-25px] opacity-0 delay1s')} >
             <div className='h-[88px] w-[86px] bg-neutral-400 rounded-[16px] greyShadow'>
             </div>
             <span className='instrument text-[100px] w-fit leading-snug heroTextGradient'>I'm Cedric, UI Designer</span>
           </div>
-          <div className='flex flex-row gap-x-[20px] items-center'>
+          <div className={'flex flex-row gap-x-[20px] items-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay1-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay1-5s')}>
             <span className='instrument text-[100px] w-fit leading-none heroTextGradient'>& Full Stack Developer</span>
             <div className='h-[88px] w-[86px] bg-neutral-400 rounded-[16px] greyShadow cloudIcon'>
             </div>
             <div className="h-[88px] w-[86px] bg-neutral-400 rounded-[16px] greyShadow moonIcon">
             </div>
           </div>
-          <span className='mt-[15px] max-w-[434px] text-center'>
+          <span className={'mt-[15px] max-w-[434px] text-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2s')}>
             I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
           </span>
 
-          <div className='flex gap-x-[15px] mt-[30px]'>
+          <div className={'flex gap-x-[15px] mt-[30px]' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2-5s')}>
             <button className='blueButton text-[#FFFFFF] font-semibold'>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.125 0.999981V9.12473C12.1251 9.24841 12.0885 9.36934 12.0198 9.47221C11.9512 9.57508 11.8535 9.65526 11.7393 9.7026C11.625 9.74994 11.4993 9.76232 11.378 9.73817C11.2567 9.71401 11.1453 9.65441 11.0578 9.5669L7.43764 5.94592L1.9425 11.4418C1.82523 11.5591 1.66618 11.625 1.50033 11.625C1.33448 11.625 1.17543 11.5591 1.05815 11.4418C0.940883 11.3246 0.875 11.1655 0.875 10.9997C0.875 10.8338 0.940883 10.6748 1.05815 10.5575L6.55408 5.06236L2.9331 1.44216C2.84559 1.35475 2.78599 1.24334 2.76183 1.12204C2.73768 1.00074 2.75006 0.875005 2.7974 0.760744C2.84474 0.646484 2.92492 0.548839 3.02779 0.480172C3.13066 0.411505 3.25159 0.374903 3.37527 0.375H11.5C11.6658 0.375 11.8247 0.440846 11.9419 0.558053C12.0592 0.67526 12.125 0.834226 12.125 0.999981Z" fill="white"/>
@@ -64,29 +71,29 @@ function App() {
             </button>
           </div>
 
-          <div className='flex flex-row w-full h-[405px] mt-[50px] overflow-x-hidden gap-x-[16px] opacity-100 relative z-20'>
+          <div className={'flex flex-row w-full h-[405px] mt-[50px] overflow-x-hidden gap-x-[16px] relative z-20' + (visible ? ' translate-y-[0px] opacity-100 heroTextTransition delay3s' : ' translate-y-[50px] opacity-0 heroTextTransition delay3s')}>
             
-            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
+            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
               <img className='carousselImg' alt="project 1 design" src={design1}/>
               <span className='mt-[15px] ml-[15px] self-start'>Portfoy</span>
             </div>
             
-            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
+            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
               <img className='carousselImg' alt="project 1 design" src={design1}/>
               <span className='mt-[15px] ml-[15px] self-start'>Portfoy</span>
             </div>
             
-            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
+            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
               <img className='carousselImg' alt="project 1 design" src={design1}/>
               <span className='mt-[15px] ml-[15px] self-start'>Portfoy</span>
             </div>
               
-            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
+            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
               <img className='carousselImg' alt="project 1 design" src={design1}/>
               <span className='mt-[15px] ml-[15px] self-start'>Portfoy</span>
             </div>
               
-            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
+            <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6] cursor-pointer'>
               <img className='carousselImg' alt="project 1 design" src={design1}/>
               <span className='mt-[15px] ml-[15px] self-start'>Portfoy</span>
             </div>

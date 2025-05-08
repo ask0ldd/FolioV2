@@ -3,6 +3,38 @@
   width: 100%;
 }
 
+.headerTransition {
+  transition: all 2s ease;
+}
+
+.heroTextTransition {
+  transition: all 0.75s ease;
+}
+
+.delay1s {
+  transition-delay: 0.75s;
+}
+
+.delay1-5s {
+  transition-delay: 1s;
+}
+
+.delay2s {
+  transition-delay: 1.25s;
+}
+
+.delay2-5s {
+  transition-delay: 1.5s;
+}
+
+.delay3s {
+  transition-delay: 2s;
+}
+
+.delay4s {
+  transition-delay: 4s;
+}
+
 .dancing {
   font-family: "Dancing Script", cursive;
 }
