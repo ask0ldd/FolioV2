@@ -28,7 +28,7 @@
 }
 
 .delay3s {
-  transition-delay: 2s;
+  transition-delay: 1.75s;
 }
 
 .delay4s {
@@ -48,6 +48,14 @@
     0px 0.7px 0.7px -0.6px rgba(16, 49, 77, 0.24);
 }
 
+.whiteBlockShadow {
+  box-shadow: 0px 0.7px 0.7px -0.6px rgba(121, 152, 189, 0.24),
+    0px 1.8px 1.8px -1.3px rgba(121, 152, 189, 0.23),
+    0px 6.8px 6.8px -2.6px rgba(121, 152, 189, 0.2),
+    0px 13.6px 13.6px -3.3px rgba(121, 152, 189, 0.16),
+    0px 30px 30px -4px rgba(121, 152, 189, 0.06), inset 0px 2px 4px #ffffff;
+}
+
 .heroTextGradient {
   background: linear-gradient(180deg, #0e1c29 0%, #31628f 100%);
   -webkit-background-clip: text;
@@ -57,7 +65,11 @@
 }
 
 .heroBGGradient {
-  background: radial-gradient(100% 293.88% at 0% 0%, #d1d1d1 0%, #f6fbff 100%);
+  background: radial-gradient(
+    100% 293.88% at 0% 0%,
+    #e1e7ec 0%,
+    #f6fbff 100%
+  ); /*E1E7EC d1d1d1*/
 }
 
 .cloudIcon {
