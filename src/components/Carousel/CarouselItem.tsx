@@ -1,5 +1,5 @@
 import type { IRendererProps } from "./Carousel"
-import '../../pages/app/App.css'
+import './CarouselItem.css'
 import React from "react"
 
 function CarouselItem({item} : IRendererProps<ICarouselItem>){

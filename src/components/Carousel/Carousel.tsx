@@ -29,7 +29,7 @@ export default function Carousel<T>({visible, items, Renderer} : ICarouselProps<
     }, [animate])
 
     return(
-        <div className={'flex flex-row w-full h-[405px] mt-[50px] overflow-x-hidden relative z-20' + (visible ? ' translate-y-[0px] opacity-100 heroTextTransition delay3s' : ' translate-y-[50px] opacity-0 heroTextTransition delay3s')}>
+        <div className={'flex flex-row w-full h-[405px] mt-[50px] overflow-x-hidden relative' + (visible ? ' translate-y-[0px] opacity-100 heroTextTransition delay3s' : ' translate-y-[50px] opacity-0 heroTextTransition delay3s')}>
             <div ref={carouselTrackRef} className={`flex flex-row gap-x-[16px] absolute`} style={{transform:`translateX(-${position}px)`}}>
                 {
                     items.map((item, index) => 
