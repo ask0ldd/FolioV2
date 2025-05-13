@@ -20,17 +20,18 @@ const skills = [
 ]
 
 const experiences = [
-    {company : 'Nexus Creative', title : 'Product Designer', date : '2021'},
-    {company : 'BrightLeaf Co', title : 'Product Designer', date : '2021'},
-    {company : 'SummitWorks', title : 'Product Designer', date : '2021'},
-    {company : 'UrbanFlow Lab', title : 'Product Designer', date : '2021'},
-    {company : 'Nexus Creative', title : 'Product Designer', date : '2021'},
+    {company : 'OC', title : 'Full Stack Developer', date : '2023'},
+    {company : 'Street Garage', title : 'Graphic Designer', date : '2021'},
+    {company : 'Fitness Boutique', title : 'Full Stack Developer', date : '2016'},
+    {company : 'Freelancer', title : 'Full Stack Developer', date : '2005'},
+    {company : 'Data Engineering Tech', title : 'EDF', date : '2004'},
+    {company : 'Data Engineering Tech', title : 'UUNET', date : '2003'},
 ]
 
 export default function CV(){
 
     return(
-        <section id="resume" className="bg-[#E1E7EC] flex flex-col w-full min-h-[100vh] items-center py-[100px]">
+        <section id="resume" className="bg-[#E1E7EC] flex flex-col w-full items-center py-[100px]">
             <div className="flex flex-row max-w-[1200px] w-full gap-x-[45px]">
                 <div className="flex flex-col w-[300px] h-fit shrink-0 grow-0 p-[25px] items-center bg-[#F6FBFF] rounded-[20px] whiteBlockShadow">
                     <div className='CVPictureShadows w-[252px] h-[265px] bg-neutral-400 rounded-[12px] askPic'></div>
@@ -77,7 +78,7 @@ export default function CV(){
                         {skills.map(skill => <span>{skill}</span>)}
                     </div>
                     <hr className="border-[#9DAEBCbb] border-dashed"/>
-                    <div className='flex flex-col gap-y-[15px]'>
+                    <div className='grid grid-cols-3 gap-y-[15px]'>
                         {experiences.map(
                             experience => <Experience {...experience} />
                         )}
@@ -90,11 +91,11 @@ export default function CV(){
 
 function Experience({company, title, date} : IExperienceProps){
     return(
-        <div className='bg-[#D8DFE5] flex flex-row justify-between h-[56px] px-[20px] items-center rounded-[10px]'>
-            <span>{company}</span>
-            <span>{title}</span>
-            <span>{date}</span>
-        </div>
+        <>
+            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center rounded-l-[10px]'>{company}</span>
+            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center'>{title}</span>
+            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pr-[20px] items-center justify-end rounded-r-[10px] text-right'>{date}</span>
+        </>
     )
 }
 
