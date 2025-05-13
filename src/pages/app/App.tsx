@@ -5,6 +5,8 @@ import Carousel from '../../components/Carousel/Carousel'
 import CarouselItem from '../../components/Carousel/CarouselItem'
 import KeyPoints from './sections/KeyPoints'
 import CV from './sections/CV'
+import Comparison from './sections/Comparison'
+import Process from './sections/Process'
 
 const items = Array.from({ length: 8 }, () => ({ image: design1, title: "Portfoy", link: "" }))
 
@@ -91,8 +93,9 @@ function App() {
         </section>
 
         <KeyPoints/>
-
         <CV/>
+        <Comparison/>
+        <Process/>
         
       </div>
     </div>

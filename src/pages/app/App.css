@@ -81,9 +81,9 @@
 }
 
 .askPic {
-  background-image: url("../../assets/askeladd.jpg");
+  background-image: url("../../assets/askeladd3.jpg");
   background-size: cover;
-  filter: saturate(0.8) contrast(0.9) brightness(1.1);
+  filter: saturate(0.8) contrast(0.9) brightness(1.2);
 }
 
 .ray1 {
