@@ -23,6 +23,7 @@ const experiences = [
     {company : 'OC', title : 'Full Stack Developer', date : '2023'},
     {company : 'Street Garage', title : 'Graphic Designer', date : '2021'},
     {company : 'Fitness Boutique', title : 'Full Stack Developer', date : '2016'},
+    {company : 'Sony DE', title : 'Audio Engineer / Composer', date : '2006'},
     {company : 'Freelancer', title : 'Full Stack Developer', date : '2005'},
     {company : 'Data Engineering Tech', title : 'EDF', date : '2004'},
     {company : 'Data Engineering Tech', title : 'UUNET', date : '2003'},
@@ -75,12 +76,12 @@ export default function CV(){
                     </span>
                     <hr className="border-[#9DAEBCbb] border-dashed"/>
                     <div className="flex flex-row flex-wrap w-full *:bg-[#D8DFE5] gap-[10px] *:rounded-[8px] *:h-[40px] *:flex *:justify-center *:items-center *:px-[15px] *:text-[14px]">
-                        {skills.map(skill => <span>{skill}</span>)}
+                        {skills.map((skill, index) => <span key={'skill' + index}>{skill}</span>)}
                     </div>
                     <hr className="border-[#9DAEBCbb] border-dashed"/>
                     <div className='grid grid-cols-3 gap-y-[15px]'>
                         {experiences.map(
-                            experience => <Experience {...experience} />
+                            (experience, index) => <Experience key={'xp' + index} index={index} {...experience} />
                         )}
                     </div>
                 </div>
@@ -92,14 +93,15 @@ export default function CV(){
 function Experience({company, title, date} : IExperienceProps){
     return(
         <>
-            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center rounded-l-[10px]'>{company}</span>
-            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center'>{title}</span>
-            <span className='bg-[#D8DFE5] flex flex-row h-[52px] pr-[20px] items-center justify-end rounded-r-[10px] text-right'>{date}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center rounded-l-[10px]'}>{company}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center'}>{title}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pr-[20px] items-center justify-end rounded-r-[10px] text-right'}>{date}</span>
         </>
     )
 }
 
 interface IExperienceProps{
+    index? : number
     title : string
     date: string
     company : string
