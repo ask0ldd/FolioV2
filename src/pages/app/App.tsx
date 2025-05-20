@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import './App.css'
 import design1 from '../../assets/design1.jpg'
 import { useEffect, useState } from 'react'
@@ -28,7 +29,7 @@ function App() {
           </div>
         }
 
-        <header className={visible ? 'flex w-full justify-between h-[80px] translate-y-[0px] opacity-100 items-center max-w-[1280px] z-10 headerTransition' : 'flex w-full justify-between h-[80px] translate-y-[-100px] opacity-0 items-center max-w-[1280px] z-10 headerTransition'} >
+        <header className={visible ? 'flex w-full mx-auto justify-between h-[80px] translate-y-[0px] opacity-100 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0' : 'flex w-full justify-between h-[80px] translate-y-[-100px] opacity-0 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0'} >
           <span className='text-[26px] dancing font-bold'>
             Cedric Efflam
           </span>
@@ -56,15 +57,15 @@ function App() {
 
         <section className='flex flex-col w-full pt-[60px] pb-[100px] items-center overflow-hidden'>
           <div className={'flex flex-row gap-x-[20px] items-center heroTextTransition' + (visible ? ' translate-x-[0px] opacity-100 delay1s' : ' translate-x-[-25px] opacity-0 delay1s')} >
-            <div className='h-[88px] w-[86px] rounded-[16px] greyShadow askPic'>
+            <div className='h-[56px] md:h-[68px] xl:h-[88x] w-[55px] md:w-[67px] xl:w-[86x] rounded-[16px] greyShadow askPic shrink-0'>
             </div>
-            <h1 className='instrument text-[100px] w-fit leading-snug heroTextGradient'>I'm Cedric, UI Designer</h1>
+            <h1 className='instrument text-[40px] md:text-[72px] xl:text-[100px] w-fit leading-snug heroTextGradient'>I'm Cedric, UI Designer</h1>
           </div>
           <div className={'flex flex-row gap-x-[20px] items-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay1-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay1-5s')}>
-            <h1 className='instrument text-[100px] w-fit leading-none heroTextGradient'>& Full Stack Developer</h1>
-            <div className='h-[88px] w-[86px] bg-neutral-400 rounded-[16px] greyShadow cloudIcon'>
+            <h1 className='instrument text-[40px] md:text-[72px] xl:text-[100px] w-fit leading-none heroTextGradient'>& Full Stack Developer</h1>
+            <div className='h-[56px] md:h-[68px] xl:h-[88x] w-[55px] md:w-[67px] xl:w-[86x] bg-neutral-400 rounded-[16px] greyShadow cloudIcon shrink-0'>
             </div>
-            <div className="h-[88px] w-[86px] bg-neutral-400 rounded-[16px] greyShadow moonIcon">
+            <div className="h-[56px] md:h-[68px] xl:h-[88x] w-[55px] md:w-[67px] xl:w-[86x] bg-neutral-400 rounded-[16px] greyShadow moonIcon shrink-0">
             </div>
           </div>
           <span className={'mt-[15px] max-w-[434px] text-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2s')}>
@@ -88,7 +89,7 @@ function App() {
             </button>
           </div>
 
-          <Carousel items={items} visible={visible} Renderer={CarouselItem}/>
+          {<Carousel items={items} visible={visible} Renderer={CarouselItem}/>}
 
         </section>
 
