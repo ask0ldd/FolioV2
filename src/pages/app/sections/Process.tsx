@@ -13,14 +13,20 @@ export default function Process(){
             </div>
             <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
             <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
-            <div className='flex flex-row flex-wrap gap-[25px] w-full max-w-[900px] mt-[40px]'>
+            <div className='flex flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
                 <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
                     <div className='flex justify-center items-center bg-[#0E1C29] w-[50px] h-[50px] font-semibold rounded-full text-[#FFFFFF]'>01</div>
-                    <h3 className='text-[24px] font-medium'>Let's Get In Touch</h3>
-                    <span className='text-[16px]'>Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.</span>
+                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>Let's Get In Touch</h3>
+                    <span className='text-[16px] text-[#0E1C29] mt-[10px]'>Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.</span>
+                    <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
+                    <button className='flex text-[12px] font-medium w-[66px] h-[30px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step 1</button>
                 </div>
                 <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
-                    Step2
+                    <div className='flex justify-center items-center bg-[#0E1C29] w-[50px] h-[50px] font-semibold rounded-full text-[#FFFFFF]'>02</div>
+                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>Grab Your Designs</h3>
+                    <span className='text-[16px] text-[#0E1C29] mt-[10px]'>Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals.</span>
+                    <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
+                    <button className='flex text-[12px] font-medium w-[66px] h-[30px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step 2</button>
                 </div>
                 <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
                     Step3

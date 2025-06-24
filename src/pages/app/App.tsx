@@ -31,7 +31,7 @@ function App() {
 
         <header className={visible ? 'flex w-full mx-auto justify-between h-[80px] translate-y-[0px] opacity-100 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0' : 'flex w-full justify-between h-[80px] translate-y-[-100px] opacity-0 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0'} >
           <span className='text-[26px] dancing font-bold'>
-            Cedric Efflam
+            Cedric B.Efflam
           </span>
           <div className='flex flex-row gap-x-[20px]'>
             <div className='flex flex-row gap-x-[10px] text-[14px] items-center'>
