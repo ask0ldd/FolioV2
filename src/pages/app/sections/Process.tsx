@@ -1,4 +1,5 @@
 import '../App.css'
+import '../../../styles/Process.css'
 
 export default function Process(){
     return(
@@ -14,27 +15,29 @@ export default function Process(){
             <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
             <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
             <div className='flex flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
-                <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
-                    <div className='flex justify-center items-center bg-[#0E1C29] w-[50px] h-[50px] font-semibold rounded-full text-[#FFFFFF]'>01</div>
-                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>Let's Get In Touch</h3>
-                    <span className='text-[16px] text-[#0E1C29] mt-[10px]'>Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.</span>
-                    <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
-                    <button className='flex text-[12px] font-medium w-[66px] h-[30px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step 1</button>
-                </div>
-                <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
-                    <div className='flex justify-center items-center bg-[#0E1C29] w-[50px] h-[50px] font-semibold rounded-full text-[#FFFFFF]'>02</div>
-                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>Grab Your Designs</h3>
-                    <span className='text-[16px] text-[#0E1C29] mt-[10px]'>Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals.</span>
-                    <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
-                    <button className='flex text-[12px] font-medium w-[66px] h-[30px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step 2</button>
-                </div>
-                <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
-                    Step3
-                </div>
-                <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
-                    Step4
-                </div>
+                <ProcessStep step={1} title={'Let\'s Get In Touch'} text={'Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.'}/>
+                <ProcessStep step={2} title={'Grab Your Designs'} text={'Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals.'}/>
+                <ProcessStep step={3} title={'Kickstart Development'} text={'I expertly transform your designs into a powerful, scalable solution, fully ready to launch.'}/>
+                <ProcessStep step={4} title={'And Hand Over'} text={'Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing support.'}/>
             </div>
         </section>
     )
+}
+
+function ProcessStep({title, text, step} : IProcessStep){
+    return(
+        <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
+            <div className='flex justify-center text-[20px] font-semibold items-center bg-[#0E1C29] w-[50px] h-[50px] rounded-full text-[#FFFFFF] stepShadow'>0{step}</div>
+            <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>{title}</h3>
+            <span className='text-[16px] text-[#0E1C29] mt-[10px]'>{text}</span>
+            <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
+            <button className='flex text-[12px] font-medium w-[66px] h-[35px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step {step}</button>
+        </div>        
+    )
+}
+
+interface IProcessStep{
+    step : number
+    title : string
+    text : string
 }
