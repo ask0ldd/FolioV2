@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import ux1 from '../../../assets/uiux.jpg'
 import ux2 from '../../../assets/uiux2.jpg'
 import '../../../styles/KeyPoints.css'
@@ -17,7 +18,7 @@ export default function KeyPoints(){
             <span className='text-[14px] md:text-[16px] mt-[20px]'>Building smooth and engaging digital interactions that elevate user satisfaction</span>
             <div className='flex flex-col xl:flex-row flex-wrap gap-[25px] w-full md:max-w-[750px] xl:max-w-[1200px] mt-[50px]'>
 
-                <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow flex-[50%] rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
+                {/*<div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow flex-[50%] rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
                     <img src={ux1} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>
                     <div className='flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow'>
                         <div className='iconKP mt-[25px] md:mt-[15px] bg-[#fafdff] border-2 border-[#FFFFFF]'>
@@ -61,7 +62,7 @@ export default function KeyPoints(){
                         <h3 className='text-[24px] font-medium mt-[20px]'>Design & Creativity</h3>
                         <span className='leading-[26px] mt-[13px]'>Creating visually compelling designs that truly resonate with your target audience and brand.</span>
                     </div>
-                </div>
+                </div>*/}
 
             </div>
             <div className='flex gap-x-[15px] mt-[50px] translate-x-[0px] opacity-100'>
@@ -84,19 +85,35 @@ export default function KeyPoints(){
     )
 }
 
-function Keypoint({text, title} : {text : string, title : string}){
+function Keypoint({text, title, icon, image} : {text : string, title : string, icon : ReactNode, image : string}){
     return(
-        <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow flex-[50%] rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
-            <img src={ux1} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>
+        <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
+            <img src={image} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>
             <div className='flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow'>
-                <div className='iconKP mt-[25px] md:mt-[15px] bg-[#fafdff] border-2 border-[#FFFFFF]'>
-                    <svg width="19" height="26" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.3698 8.66561C17.1781 8.05936 17.7752 7.21414 18.0765 6.24967C18.3778 5.28521 18.368 4.25041 18.0484 3.29184C17.7289 2.33327 17.1159 1.49953 16.2962 0.908723C15.4765 0.317919 14.4917 0 13.4813 0H4.81565C3.80523 0 2.82042 0.317919 2.00072 0.908723C1.18102 1.49953 0.567993 2.33327 0.24847 3.29184C-0.0710536 4.25041 -0.0808735 5.28521 0.220402 6.24967C0.521677 7.21414 1.11877 8.05936 1.92711 8.66561C1.31508 9.12428 0.821135 9.72217 0.486194 10.4098C0.151252 11.0974 -0.0150475 11.8548 0.00106913 12.6195C0.0171858 13.3842 0.215255 14.134 0.57887 14.8068C0.942486 15.4797 1.46118 16.0563 2.092 16.4887C1.37448 17.0343 0.808076 17.7539 0.446415 18.5795C0.0847531 19.4051 -0.0601954 20.3093 0.0252937 21.2066C0.110783 22.1039 0.42388 22.9645 0.93494 23.707C1.446 24.4494 2.13811 25.0491 2.94573 25.4494C3.75335 25.8496 4.64976 26.037 5.55007 25.994C6.45039 25.9509 7.32481 25.6787 8.09055 25.2033C8.85629 24.7278 9.488 24.0648 9.92587 23.2769C10.3637 22.4891 10.5933 21.6025 10.5927 20.7012V16.3684C11.6142 17.1345 12.8981 17.4634 14.1621 17.2828C15.4261 17.1023 16.5666 16.427 17.3326 15.4055C18.0987 14.3841 18.4277 13.1001 18.2471 11.8362C18.0665 10.5722 17.3912 9.4317 16.3698 8.66561ZM8.66703 15.4055H4.81565C4.04956 15.4055 3.31485 15.1012 2.77314 14.5595C2.23144 14.0178 1.92711 13.2831 1.92711 12.517C1.92711 11.7509 2.23144 11.0162 2.77314 10.4745C3.31485 9.93278 4.04956 9.62846 4.81565 9.62846H8.66703V15.4055ZM13.4813 7.70276H10.5927V1.92569H13.4813C14.2473 1.92569 14.9821 2.23002 15.5238 2.77172C16.0655 3.31343 16.3698 4.04814 16.3698 4.81423C16.3698 5.58032 16.0655 6.31503 15.5238 6.85673C14.9821 7.39844 14.2473 7.70276 13.4813 7.70276Z" fill="#0E1C29" fillOpacity="0.501961"/>
-                    </svg>
-                </div>
+                {icon}
                 <h3 className='text-[24px] font-medium mt-[20px]'>{title}</h3>
                 <span className='leading-[26px] mt-[13px]'>{text}</span>
             </div>
+        </div>
+    )
+}
+
+function BlackIcon(){
+    return(
+        <div className='iconKP mt-[15px] bg-[#0E1C29]'>
+            <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1001 8.88863H11.3633L17.6929 14.444C17.8298 14.5633 17.9268 14.7209 17.9709 14.8959C18.015 15.0709 18.0042 15.255 17.9399 15.4238C17.8756 15.5926 17.7608 15.7381 17.6108 15.8409C17.4608 15.9437 17.2827 15.9991 17.1001 15.9995H9.90094V23.1104C9.90108 23.2863 9.84838 23.4583 9.7495 23.6046C9.65063 23.7509 9.51003 23.865 9.34551 23.9323C9.18099 23.9996 8.99994 24.0172 8.82529 23.9829C8.65063 23.9485 8.49022 23.8638 8.36436 23.7393L0.265303 15.7395C0.181762 15.6569 0.115517 15.5589 0.0703527 15.451C0.0251886 15.3431 0.00199059 15.2274 0.00208354 15.1107V7.99977C0.00208354 7.76403 0.0968939 7.53794 0.265657 7.37125C0.43442 7.20455 0.663312 7.11091 0.901979 7.11091H6.63882L0.304673 1.55551C0.167448 1.43598 0.0703732 1.27796 0.0263893 1.10254C-0.0175947 0.927117 -0.00639719 0.742619 0.0584888 0.573642C0.123375 0.404665 0.238866 0.259239 0.389566 0.156751C0.540266 0.0542637 0.719014 -0.000416028 0.901979 2.38344e-06H17.1001C17.3388 2.38344e-06 17.5677 0.0936503 17.7364 0.260344C17.9052 0.427039 18 0.653124 18 0.888865V7.99977C18 8.23551 17.9052 8.4616 17.7364 8.62829C17.5677 8.79498 17.3388 8.88863 17.1001 8.88863Z" fill="white"/>
+            </svg>
+        </div>
+    )
+}
+
+function WhiteIcon(){
+    return(
+        <div className='iconKP mt-[25px] md:mt-[15px] bg-[#fafdff] border-2 border-[#FFFFFF]'>
+            <svg width="19" height="26" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.3698 8.66561C17.1781 8.05936 17.7752 7.21414 18.0765 6.24967C18.3778 5.28521 18.368 4.25041 18.0484 3.29184C17.7289 2.33327 17.1159 1.49953 16.2962 0.908723C15.4765 0.317919 14.4917 0 13.4813 0H4.81565C3.80523 0 2.82042 0.317919 2.00072 0.908723C1.18102 1.49953 0.567993 2.33327 0.24847 3.29184C-0.0710536 4.25041 -0.0808735 5.28521 0.220402 6.24967C0.521677 7.21414 1.11877 8.05936 1.92711 8.66561C1.31508 9.12428 0.821135 9.72217 0.486194 10.4098C0.151252 11.0974 -0.0150475 11.8548 0.00106913 12.6195C0.0171858 13.3842 0.215255 14.134 0.57887 14.8068C0.942486 15.4797 1.46118 16.0563 2.092 16.4887C1.37448 17.0343 0.808076 17.7539 0.446415 18.5795C0.0847531 19.4051 -0.0601954 20.3093 0.0252937 21.2066C0.110783 22.1039 0.42388 22.9645 0.93494 23.707C1.446 24.4494 2.13811 25.0491 2.94573 25.4494C3.75335 25.8496 4.64976 26.037 5.55007 25.994C6.45039 25.9509 7.32481 25.6787 8.09055 25.2033C8.85629 24.7278 9.488 24.0648 9.92587 23.2769C10.3637 22.4891 10.5933 21.6025 10.5927 20.7012V16.3684C11.6142 17.1345 12.8981 17.4634 14.1621 17.2828C15.4261 17.1023 16.5666 16.427 17.3326 15.4055C18.0987 14.3841 18.4277 13.1001 18.2471 11.8362C18.0665 10.5722 17.3912 9.4317 16.3698 8.66561ZM8.66703 15.4055H4.81565C4.04956 15.4055 3.31485 15.1012 2.77314 14.5595C2.23144 14.0178 1.92711 13.2831 1.92711 12.517C1.92711 11.7509 2.23144 11.0162 2.77314 10.4745C3.31485 9.93278 4.04956 9.62846 4.81565 9.62846H8.66703V15.4055ZM13.4813 7.70276H10.5927V1.92569H13.4813C14.2473 1.92569 14.9821 2.23002 15.5238 2.77172C16.0655 3.31343 16.3698 4.04814 16.3698 4.81423C16.3698 5.58032 16.0655 6.31503 15.5238 6.85673C14.9821 7.39844 14.2473 7.70276 13.4813 7.70276Z" fill="#0E1C29" fillOpacity="0.501961"/>
+            </svg>
         </div>
     )
 }
