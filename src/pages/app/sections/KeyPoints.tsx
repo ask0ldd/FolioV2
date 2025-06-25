@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 import ux1 from '../../../assets/uiux.jpg'
 import ux2 from '../../../assets/uiux2.jpg'
 import '../../../styles/KeyPoints.css'
@@ -64,10 +64,10 @@ export default function KeyPoints(){
                     </div>
                 </div>*/}
 
-                <Keypoint text={'Crafting seamless, user-friendly interfaces that enhance engagement and usability.'} title={'UX & UI'} icon={<WhiteIcon/>} image={ux1}/>
-                <Keypoint text={'Building high-performance, interactive websites using Framer’s powerful design and development tools for seamless user experiences.'} title={'Framer Development'} icon={<BlackIcon/>}/>
-                <Keypoint text={'Interactive websites with Framer’s advanced design and development tools to deliver smooth and engaging user experiences.'} title={'Interactive Web Experiences'} icon={<BlackIcon/>}/>
-                <Keypoint text={'Creating visually compelling designs that truly resonate with your target audience and brand.'} title={'Design & Creativity'} icon={<WhiteIcon/>} image={ux2}/>
+                <Keypoint style={{flex:'50%'}} text={'Crafting seamless, user-friendly interfaces that enhance engagement and usability.'} title={'UX & UI'} icon={<WhiteIcon/>} image={ux1}/>
+                <Keypoint style={{flex:'40%'}} text={'Building high-performance, interactive websites using Framer’s powerful design and development tools for seamless user experiences.'} title={'Framer Development'} icon={<BlackIcon/>}/>
+                <Keypoint style={{flex:'40%'}} text={'Interactive websites with Framer’s advanced design and development tools to deliver smooth and engaging user experiences.'} title={'Interactive Web Experiences'} icon={<BlackIcon/>}/>
+                <Keypoint style={{flex:'50%'}} text={'Creating visually compelling designs that truly resonate with your target audience and brand.'} title={'Design & Creativity'} icon={<WhiteIcon/>} image={ux2}/>
 
             </div>
             <div className='flex gap-x-[15px] mt-[50px] translate-x-[0px] opacity-100'>
@@ -90,11 +90,11 @@ export default function KeyPoints(){
     )
 }
 
-function Keypoint({text, title, icon, image} : {text : string, title : string, icon : ReactNode, image? : string}){
+function Keypoint({text, title, icon, image, style} : {text : string, title : string, icon : ReactNode, image? : string, style? : CSSProperties}){
     return(
-        <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
-            <img src={image} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>
-            <div className='flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow'>
+        <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]' style={style}>
+            {image && <img src={image} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>}
+            <div className={image ? 'flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow' : 'flex flex-col flex-[100%] md:flex-[100%] max-w-full md:max-w-[100%] shrink grow'}>
                 {icon}
                 <h3 className='text-[24px] font-medium mt-[20px]'>{title}</h3>
                 <span className='leading-[26px] mt-[13px]'>{text}</span>
