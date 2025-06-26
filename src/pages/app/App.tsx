@@ -8,6 +8,7 @@ import KeyPoints from './sections/KeyPoints'
 import CV from './sections/CV'
 import Comparison from './sections/Comparison'
 import Process from './sections/Process'
+import QA from './sections/QA'
 
 const items = Array.from({ length: 8 }, () => ({ image: design1, title: "Portfoy", link: "" }))
 
@@ -97,6 +98,7 @@ function App() {
         <CV/>
         <Comparison/>
         <Process/>
+        <QA/>
         
       </div>
     </div>
