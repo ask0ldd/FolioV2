@@ -1,3 +1,5 @@
+import '../App.css'
+
 export default function QA(){
     return(
         <section className='flex flex-col w-full items-center py-[100px] bg-[#D8DFE5]'>
@@ -14,7 +16,10 @@ export default function QA(){
             <div className='flex flex-row flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px]'>
                 
                 <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] items-center h-fit rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
-                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px] text-center'>Get In Touch Now!</h3>
+                    <div className="flex justify-center items-center h-[56px] w-[56px] bg-[#F6FBFF] rounded-[8px] QAIconShadows">
+                        <svg width={32} height={32} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="#0E1C29"><g color="#0E1C29"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></g></svg>
+                    </div>
+                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[17px] text-center'>Get In Touch Now!</h3>
                     <span className='text-[16px] text-[#0E1C29] text-center mt-[10px]'>Still have questions? Feel free to get in touch with us today!</span>
                     <button className='blueButton text-[#FFFFFF] font-semibold h-[48px] w-fit mt-[15px]'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
