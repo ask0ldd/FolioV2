@@ -13,76 +13,24 @@ export default function QA(){
             <span className='mt-[20px]'>Find quick answers to the most common questions about the services offered</span>
             <div className='flex flex-row flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px]'>
                 
-                <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
-                    <h3 className="dm-sans text-[36px] text-center">Me</h3>
-                    <hr className="mt-[15px] mb-[25px] border-[#9DAEBCbb] border-dashed"/>
-                    <ul className="flex flex-col text-[14px] gap-y-[18px] px-[10px]">
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Custom, high-performance websites</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Pixel-perfect UI/UX design</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Built with Framer & Figma expertise</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Seamless animations & interactions</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Scalable & future-proof solutions</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Optimized for speed & conversions</span>
-                        </li>
-                        <li className="flex flex-row gap-x-[10px] items-center">
-                            <svg className="translate-y-[2px]" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.6223 1.71611L5.12231 9.21611C5.05699 9.28166 4.97937 9.33367 4.8939 9.36916C4.80844 9.40465 4.71681 9.42292 4.62427 9.42292C4.53173 9.42292 4.44009 9.40465 4.35463 9.36916C4.26916 9.33367 4.19154 9.28166 4.12622 9.21611L0.84497 5.93486C0.779565 5.86946 0.727684 5.79181 0.692287 5.70636C0.65689 5.6209 0.638672 5.52931 0.638672 5.43682C0.638672 5.34432 0.65689 5.25273 0.692287 5.16727C0.727684 5.08182 0.779565 5.00417 0.84497 4.93877C0.910374 4.87336 0.98802 4.82148 1.07348 4.78609C1.15893 4.75069 1.25052 4.73247 1.34302 4.73247C1.43551 4.73247 1.5271 4.75069 1.61256 4.78609C1.69801 4.82148 1.77566 4.87336 1.84106 4.93877L4.62485 7.72256L11.6274 0.72119C11.7595 0.5891 11.9386 0.514893 12.1254 0.514893C12.3122 0.514893 12.4914 0.5891 12.6235 0.72119C12.7556 0.85328 12.8298 1.03243 12.8298 1.21924C12.8298 1.40604 12.7556 1.58519 12.6235 1.71728L12.6223 1.71611Z" fill="#0E1C29"/>
-                            </svg>
-                            <span>Advanced SEO tactics for enhanced visibility</span>
-                        </li>
-                    </ul>
-                    <button className='blueButton text-[#FFFFFF] font-semibold h-[48px] w-full mt-[35px]'>
+                <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] items-center h-fit rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
+                    <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px] text-center'>Get In Touch Now!</h3>
+                    <span className='text-[16px] text-[#0E1C29] text-center mt-[10px]'>Still have questions? Feel free to get in touch with us today!</span>
+                    <button className='blueButton text-[#FFFFFF] font-semibold h-[48px] w-fit mt-[15px]'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.125 0.999981V9.12473C12.1251 9.24841 12.0885 9.36934 12.0198 9.47221C11.9512 9.57508 11.8535 9.65526 11.7393 9.7026C11.625 9.74994 11.4993 9.76232 11.378 9.73817C11.2567 9.71401 11.1453 9.65441 11.0578 9.5669L7.43764 5.94592L1.9425 11.4418C1.82523 11.5591 1.66618 11.625 1.50033 11.625C1.33448 11.625 1.17543 11.5591 1.05815 11.4418C0.940883 11.3246 0.875 11.1655 0.875 10.9997C0.875 10.8338 0.940883 10.6748 1.05815 10.5575L6.55408 5.06236L2.9331 1.44216C2.84559 1.35475 2.78599 1.24334 2.76183 1.12204C2.73768 1.00074 2.75006 0.875005 2.7974 0.760744C2.84474 0.646484 2.92492 0.548839 3.02779 0.480172C3.13066 0.411505 3.25159 0.374903 3.37527 0.375H11.5C11.6658 0.375 11.8247 0.440846 11.9419 0.558053C12.0592 0.67526 12.125 0.834226 12.125 0.999981Z" fill="white"/>
                         </svg>
-                        Contact Me
+                        Ask A Question
                     </button>
                 </div>
 
                 <div className="flex flex-col flex-[60%] shrink grow h-fit gap-y-[15px]">
 
-                    <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow">
-                        <div className="flex flex-row justify-between h-[48px] items-center">
-                            <span className="text-[16px] text-[#0E1C29]">What services do you offer?</span>
-                            <svg width={20} height={20} xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="0 0 256 256" 
-                                focusable="false" 
-                                color="var(--token-6396e7f2-0645-4f69-9a36-80e94f8ee015, rgb(14, 28, 41))" 
-                            ><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                            </div>
-                        <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px]">I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs</span>
-                    </div>
-
-                    <QAPair question={"What services do you offer?"} answer={"I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs"}/>
+                    <QAPair question={"What services do you offer?"} answer={"I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs."}/>
+                    <QAPair question={"Do you provide revisions?"} answer={"Yes! I offer two free rounds of revisions to ensure the final design meets your vision perfectly. Additional revisions are available if needed."}/>
+                    <QAPair question={"How do I start working with you??"} answer={"Simply reach out through my contact page, and we’ll discuss your project, goals, and timeline before getting started."}/>
+                    <QAPair question={"What is your pricing structure?"} answer={"Pricing depends on the project scope. Contact me for a custom quote based on your needs and budget."}/>
+                    <QAPair question={"How long does a project take?"} answer={"Timelines vary based on project complexity, but most designs take 1–3 weeks, while full websites take 3–6 weeks."}/>
 
                 </div>
             </div>
