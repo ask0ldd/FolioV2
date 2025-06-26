@@ -13,7 +13,7 @@ export default function QA(){
             <span className='mt-[20px]'>Find quick answers to the most common questions about the services offered</span>
             <div className='flex flex-row flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px]'>
                 
-                <div className="flex flex-col flex-[30%] shrink grow bg-[#F6FBFF] rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
+                <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
                     <h3 className="dm-sans text-[36px] text-center">Me</h3>
                     <hr className="mt-[15px] mb-[25px] border-[#9DAEBCbb] border-dashed"/>
                     <ul className="flex flex-col text-[14px] gap-y-[18px] px-[10px]">
@@ -69,8 +69,16 @@ export default function QA(){
                 </div>
 
                 <div className="flex flex-col flex-[60%] shrink grow h-fit">
-                    <div className="flex flex-col bg-[#F6FBFF]">
-                        <span>aaaa</span>
+                    <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow">
+                        <div className="flex flex-row justify-between h-[48px] items-center">
+                            <span className="text-[16px] text-[#0E1C29]">What services do you offer?</span>
+                            <svg width={20} height={20} xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 256 256" 
+                                focusable="false" 
+                                color="var(--token-6396e7f2-0645-4f69-9a36-80e94f8ee015, rgb(14, 28, 41))" 
+                            ><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                            </div>
+                        <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px]">I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs</span>
                     </div>
                 </div>
             </div>
