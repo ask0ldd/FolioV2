@@ -48,7 +48,7 @@ function ProcessStep({title, text, step} : IProcessStep){
         <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] whiteBlockShadow p-[20px] rounded-[20px]">
             <div className='flex justify-center text-[20px] font-semibold items-center bg-[#0E1C29] w-[50px] h-[50px] rounded-full text-[#FFFFFF] stepShadow'>0{step}</div>
             <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>{title}</h3>
-            <span className='text-[16px] text-[#0E1C29] mt-[10px]'>{text}</span>
+            <span className='text-[16px] text-[#0E1C29] mt-[10px] opacity-85'>{text}</span>
             <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
             <button className='flex text-[13px] font-medium w-[66px] h-[35px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step {step}</button>
         </div>        
