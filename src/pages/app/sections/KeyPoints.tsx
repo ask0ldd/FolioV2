@@ -97,7 +97,7 @@ function Keypoint({text, title, icon, image, style} : {text : string, title : st
             <div className={image ? 'flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow' : 'flex flex-col flex-[100%] md:flex-[100%] max-w-full md:max-w-[100%] shrink grow'}>
                 {icon}
                 <h3 className='text-[24px] font-medium mt-[20px]'>{title}</h3>
-                <span className='leading-[26px] mt-[13px]'>{text}</span>
+                <span className='leading-[26px] mt-[13px] opacity-85'>{text}</span>
             </div>
         </div>
     )

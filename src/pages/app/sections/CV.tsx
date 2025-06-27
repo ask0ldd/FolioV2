@@ -43,7 +43,7 @@ export default function CV(){
                     <span className='text-[36px] dm-sans mt-[8px]'>
                         Cedric B-Efflam
                     </span>
-                    <span className='text-center mt-[8px]'>
+                    <span className='text-center mt-[8px] opacity-85'>
                         UI/UX Interaction Designer<br/>Based in Paris.
                     </span>
                     <div className='flex flex-row justify-around w-full mt-[20px]'>
