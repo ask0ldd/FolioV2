@@ -5,7 +5,7 @@ export default function QA(){
         <section className='flex flex-col w-full items-center py-[100px] bg-[#D8DFE5]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
-                    <svg viewBox="0 0 256 256" width={17} height={17} focusable="false" color="#0e1c29" style={{transform:'translateY(1px)'}}>
+                    <svg viewBox="0 0 256 256" width={18} height={18} focusable="false" color="#0e1c29" style={{transform:'translateY(0.5px)'}}>
                         <g color="#0e1c29">
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,168a12,12,0,1,1,12-12A12,12,0,0,1,128,192Zm8-48.72V144a8,8,0,0,1-16,0v-8a8,8,0,0,1,8-8c13.23,0,24-9,24-20s-10.77-20-24-20-24,9-24,20v4a8,8,0,0,1-16,0v-4c0-19.85,17.94-36,40-36s40,16.15,40,36C168,125.38,154.24,139.93,136,143.28Z"></path>
                         </g>
