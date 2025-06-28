@@ -26,17 +26,88 @@ export default function HappyClients(){
                 
                 <div className='relative h-[380px] max-w-[350px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
                     <img src={client1} className='absolute top-0 left-0 h-full w-auto object-cover'/>
+                    <div className='relative w-full h-full'>
+                        {blurLayers.map((layer, idx) => (
+                            <div
+                            key={idx}
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                zIndex: layer.zIndex,
+                                backdropFilter: `blur(${layer.blur})`,
+                                WebkitBackdropFilter: `blur(${layer.blur})`,
+                                maskImage: layer.mask,
+                                WebkitMaskImage: layer.mask,
+                                borderRadius: "12px",
+                                pointerEvents: "none"
+                            }}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
                     <img src={client2} className='absolute top-0 left-0 w-full object-cover'/>
+                    <div className='relative w-full h-full'>
+                        {blurLayers.map((layer, idx) => (
+                            <div
+                            key={idx}
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                zIndex: layer.zIndex,
+                                backdropFilter: `blur(${layer.blur})`,
+                                WebkitBackdropFilter: `blur(${layer.blur})`,
+                                maskImage: layer.mask,
+                                WebkitMaskImage: layer.mask,
+                                borderRadius: "12px",
+                                pointerEvents: "none"
+                            }}
+                            />
+                        ))}
+                    </div>
                 </div>
                 
                 <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
                     <img src={client3} className='absolute top-0 left-0 w-full object-cover'/>
+                    <div className='relative w-full h-full'>
+                        {blurLayers.map((layer, idx) => (
+                            <div
+                            key={idx}
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                zIndex: layer.zIndex,
+                                backdropFilter: `blur(${layer.blur})`,
+                                WebkitBackdropFilter: `blur(${layer.blur})`,
+                                maskImage: layer.mask,
+                                WebkitMaskImage: layer.mask,
+                                borderRadius: "12px",
+                                pointerEvents: "none"
+                            }}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
                     <img src={client4} className='absolute top-0 left-0 w-full object-cover'/>
-                    <img src={client4} className='absolute top-0 left-0 w-full object-cover blur-2xl'/>
+                    <div className='relative w-full h-full'>
+                        {blurLayers.map((layer, idx) => (
+                            <div
+                            key={idx}
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                zIndex: layer.zIndex,
+                                backdropFilter: `blur(${layer.blur})`,
+                                WebkitBackdropFilter: `blur(${layer.blur})`,
+                                maskImage: layer.mask,
+                                WebkitMaskImage: layer.mask,
+                                borderRadius: "12px",
+                                pointerEvents: "none"
+                            }}
+                            />
+                        ))}
+                    </div>
                 </div>
 
             </div>
@@ -44,3 +115,46 @@ export default function HappyClients(){
         </section>
     )
 }
+
+const blurLayers = [
+  {
+    zIndex: 1,
+    blur: "0.5px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 37.5%)"
+  },
+  {
+    zIndex: 2,
+    blur: "0.5625px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 50%)"
+  },
+  {
+    zIndex: 3,
+    blur: "1.125px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 62.5%)"
+  },
+  {
+    zIndex: 4,
+    blur: "2.25px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgba(0, 0, 0, 0) 75%)"
+  },
+  {
+    zIndex: 5,
+    blur: "4.5px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 87.5%)"
+  },
+  {
+    zIndex: 6,
+    blur: "9px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    zIndex: 7,
+    blur: "18px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgb(0, 0, 0) 100%)"
+  },
+  {
+    zIndex: 8,
+    blur: "36px",
+    mask: "linear-gradient(rgba(0, 0, 0, 0) 87.5%, rgb(0, 0, 0) 100%)"
+  }
+];
