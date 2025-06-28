@@ -93,7 +93,7 @@ export default function KeyPoints(){
 function Keypoint({text, title, icon, image, style} : {text : string, title : string, icon : ReactNode, image? : string, style? : CSSProperties}){
     return(
         <div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]' style={style}>
-            {image && <img src={image} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>}
+            {image && <img src={image} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2 opacity-85'/>}
             <div className={image ? 'flex flex-col flex-[100%] md:flex-[45%] max-w-full md:max-w-[45%] shrink grow' : 'flex flex-col flex-[100%] md:flex-[100%] max-w-full md:max-w-[100%] shrink grow'}>
                 {icon}
                 <h3 className='text-[24px] font-medium mt-[20px]'>{title}</h3>

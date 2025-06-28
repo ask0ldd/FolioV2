@@ -50,7 +50,7 @@ function ProcessStep({title, text, step} : IProcessStep){
             <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[20px]'>{title}</h3>
             <span className='text-[16px] text-[#0E1C29] mt-[10px] opacity-85'>{text}</span>
             <div className='w-full h-[0px] border-[#5E788F80] border-0 border-b-1 border-dashed mt-[15px]'></div>
-            <button className='flex text-[13px] font-medium w-[66px] h-[35px] bg-[#E1E7EC] rounded-full justify-center items-center ml-auto mt-[20px]'>Step {step}</button>
+            <button className='flex text-[13px] font-medium w-[76px] h-[35px] bg-[#E1E7ECDD] pt-0.5 rounded-full justify-center items-center ml-auto mt-[20px] border-1 border-[#5E788F1c]'>Step {step}</button>
         </div>        
     )
 }
