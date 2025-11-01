@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type FC } from "react"
 import '../../pages/app/App.css'
 
-export default function Carousel<T>({visible, items, Renderer} : ICarouselProps<T>){
+export default function Carousel<T>({visible, items, Renderer, speed = 0.2} : ICarouselProps<T> & {speed? : number}){
 
     const [position, setPosition] = useState(0)
     const frameRef = useRef<number | null>(null)
@@ -13,7 +13,7 @@ export default function Carousel<T>({visible, items, Renderer} : ICarouselProps<
         lastTime.current = time;
         setPosition(pos => {
             if(carouselTrackRef.current == null) return 0
-            const next = pos + delta * 0.2;
+            const next = pos + delta * speed;
             if (next >= (carouselTrackRef.current as HTMLDivElement).getBoundingClientRect().width / 2 + 8 /* gap/2 */) return 0;
             return next;
         });
@@ -29,7 +29,7 @@ export default function Carousel<T>({visible, items, Renderer} : ICarouselProps<
     }, [animate])
 
     return(
-        <div className={'flex flex-row w-full h-[405px] mt-[50px] overflow-x-hidden relative' + (visible ? ' translate-y-[0px] opacity-100 heroTextTransition delay3s' : ' translate-y-[50px] opacity-0 heroTextTransition delay3s')}>
+        <div className={'flex flex-row w-full h-[405px] mt-[60px] overflow-x-hidden relative' + (visible ? ' translate-y-[0px] opacity-100 heroTextTransition delay3s' : ' translate-y-[50px] opacity-0 heroTextTransition delay3s')}>
             <div ref={carouselTrackRef} className={`flex flex-row gap-x-[16px] absolute`} style={{transform:`translateX(-${position}px)`}}>
                 {
                     items.map((item, index) => 
