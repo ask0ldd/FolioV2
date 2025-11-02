@@ -3,7 +3,7 @@ import '../../../styles/Process.css'
 
 export default function Process(){
     return(
-        <section className='flex flex-col w-full items-center py-[100px]'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={18} height={18} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
