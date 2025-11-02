@@ -9,6 +9,8 @@
 
 .heroTextTransition {
   transition: all 0.75s ease;
+  transition: width 0s;
+  transition: padding 0s;
 }
 
 .delay1s {
