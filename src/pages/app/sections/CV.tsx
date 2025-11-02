@@ -32,21 +32,21 @@ const experiences = [
 export default function CV(){
 
     return(
-        <section id="resume" className="bg-[#E1E7EC] flex flex-col w-full items-center py-[100px]">
-            <div className="flex flex-row max-w-[1200px] w-full gap-x-[45px]">
-                <div className="flex flex-col w-[300px] h-fit shrink-0 grow-0 p-[25px] items-center bg-[#F6FBFF] rounded-[20px] whiteBlockShadow">
-                    <div className='CVPictureShadows w-[252px] h-[265px] bg-neutral-400 rounded-[12px] askPic'></div>
+        <section id="resume" className="bg-[#E1E7EC] flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0">
+            <div className="flex flex-col max-w-[1200px] w-full gap-x-[45px] gap-y-[25px] md:flex-row md:gap-y-0">
+                <div className="flex flex-col w-full md:w-[300px] h-fit shrink-0 grow-0 p-[25px] items-center bg-[#F6FBFF] rounded-[20px] whiteBlockShadow">
+                    <div className='CVPictureShadows w-full md:w-[252px] h-[265px] bg-neutral-400 rounded-[12px] askPic'/>
                     <div className='flex flex-row gap-x-[10px] text-[14px] items-center mt-[23px]'>
-                        <div className='bg-[#31EE33] rounded-full h-[11px] w-[11px] translate-y-[0px] activeMarker'></div>
+                        <div className='bg-[#31EE33] rounded-full h-[11px] w-[11px] translate-y-[0px] activeMarker'/>
                         <span className='translate-y-[-1px]'>available for work</span>
                     </div>
-                    <span className='text-[36px] dm-sans mt-[8px]'>
+                    <span className='text-[28px] md:text-[36px] dm-sans mt-[8px]'>
                         Cedric B-Efflam
                     </span>
-                    <span className='text-center mt-[8px] opacity-85'>
+                    <span className='text-[12px] md:text-[14px] text-center mt-[8px] opacity-85'>
                         UI/UX Interaction Designer<br/>Based in Paris.
                     </span>
-                    <div className='flex flex-row justify-around w-full mt-[20px]'>
+                    <div className='flex flex-row justify-around w-fit gap-x-[30px] md:w-[80%] mt-[20px]'>
                         <div className='flex h-[40px] w-[40px] bg-[#DBE3E8] outline-1 outline-[#C7D2DD] rounded-full justify-center items-center'>
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.6" d="M17.131 16.8372L11.2659 7.61989L17.0532 1.25359C17.1841 1.10604 17.2516 0.912859 17.241 0.715913C17.2304 0.518968 17.1426 0.334135 16.9966 0.201488C16.8507 0.0688409 16.6583 -0.000929264 16.4612 0.00730397C16.2642 0.0155372 16.0783 0.10111 15.9439 0.24547L10.4311 6.30915L6.63759 0.347593C6.56995 0.241118 6.47652 0.153438 6.36597 0.0926771C6.25542 0.031916 6.13133 3.90975e-05 6.00518 8.86644e-08H1.50801C1.37362 -6.52684e-05 1.24169 0.0360029 1.12602 0.104428C1.01036 0.172853 0.915217 0.271117 0.850562 0.388932C0.785908 0.506746 0.754119 0.639777 0.758524 0.774094C0.762928 0.908411 0.803365 1.03907 0.875599 1.1524L6.74065 10.3688L0.953363 16.7398C0.88578 16.8124 0.833279 16.8976 0.798902 16.9907C0.764524 17.0837 0.748954 17.1827 0.753095 17.2818C0.757235 17.3809 0.781004 17.4782 0.823022 17.568C0.86504 17.6578 0.924473 17.7385 0.997876 17.8052C1.07128 17.8719 1.15719 17.9233 1.25063 17.9566C1.34408 17.9899 1.44319 18.0042 1.54223 17.9989C1.64128 17.9936 1.73828 17.9687 1.82761 17.9256C1.91695 17.8825 1.99684 17.8221 2.06266 17.7479L7.57544 11.6842L11.369 17.6458C11.4372 17.7514 11.5309 17.8381 11.6414 17.898C11.7519 17.958 11.8757 17.9891 12.0014 17.9887H16.4986C16.6328 17.9886 16.7646 17.9525 16.8801 17.8841C16.9956 17.8158 17.0907 17.7176 17.1553 17.6C17.2199 17.4823 17.2518 17.3494 17.2475 17.2153C17.2432 17.0811 17.203 16.9505 17.131 16.8372ZM12.4127 16.4896L2.87309 1.49906H5.59013L15.1335 16.4896H12.4127Z" fill="#0E1C29"/>
@@ -71,7 +71,7 @@ export default function CV(){
                     </button>
                 </div>
                 <div className="flex flex-col w-full shrink grow gap-y-[25px]">
-                    <span>
+                    <span className='text-[14px] md:text-[16px]'>
                         I'm Cedric B-Efflam, a passionate Web Designer & Developer based in the dynamic city of Berlin, Germany. I blend creative design with precise technical execution to deliver outstanding digital experiences.
                     </span>
                     <hr className="border-[#9DAEBCbb] border-dashed"/>
@@ -93,9 +93,9 @@ export default function CV(){
 function Experience({company, title, date} : IExperienceProps){
     return(
         <>
-            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center rounded-l-[10px]'}>{company}</span>
-            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center'}>{title}</span>
-            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pr-[20px] items-center justify-end rounded-r-[10px] text-right'}>{date}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center rounded-l-[10px] text-[14px] md:text-[1rem]'}>{company}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pl-[20px] items-center text-[14px] md:text-[1rem]'}>{title}</span>
+            <span className={'bg-[#D8DFE5] flex flex-row h-[52px] pr-[20px] items-center justify-end rounded-r-[10px] text-right text-[14px] md:text-[1rem]'}>{date}</span>
         </>
     )
 }
