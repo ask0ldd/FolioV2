@@ -1,6 +1,6 @@
 export default function Comparison(){
     return(
-        <section className='flex flex-col w-full items-center py-[100px] bg-[#D8DFE5]'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] bg-[#D8DFE5] px-[20px] md:px-0'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
