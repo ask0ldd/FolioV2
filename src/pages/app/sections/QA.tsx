@@ -2,7 +2,7 @@ import '../App.css'
 
 export default function QA(){
     return(
-        <section className='flex flex-col w-full items-center py-[100px] bg-[#D8DFE5]'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] bg-[#D8DFE5] px-[20px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={18} height={18} focusable="false" color="#0e1c29" style={{transform:'translateY(0.5px)'}}>
@@ -15,7 +15,7 @@ export default function QA(){
             </div>
             <h2 className='dm-sans text-[56px] mt-[12px]'>Questions? Answers!</h2>
             <span className='mt-[20px]'>Find quick answers to the most common questions about the services offered</span>
-            <div className='flex flex-row flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px]'>
+            <div className='flex flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px] flex-col md:flex-row'>
                 
                 <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] items-center h-fit rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
                     <div className="flex justify-center items-center h-[56px] w-[56px] bg-[#F6FBFF] rounded-[8px] whiteBlockShadow">
@@ -31,7 +31,7 @@ export default function QA(){
                     </button>
                 </div>
 
-                <div className="flex flex-col flex-[60%] shrink grow h-fit gap-y-[15px]">
+                <div className="flex flex-col flex-[60%] shrink grow h-fit gap-y-[15px] mt-[15px] md:mt-0">
 
                     <QAPair question={"What services do you offer?"} answer={"I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs."}/>
                     <QAPair question={"Do you provide revisions?"} answer={"Yes! I offer two free rounds of revisions to ensure the final design meets your vision perfectly. Additional revisions are available if needed."}/>
