@@ -8,7 +8,7 @@ import client4 from '../../../assets/client4.png'
 
 export default function HappyClients(){
     return(
-        <section className='flex flex-col w-full items-center py-[100px]'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={18} height={18} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
@@ -22,89 +22,89 @@ export default function HappyClients(){
             <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
             <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
             
-            <div className='flex flex-row flex-wrap gap-[25px] w-full max-w-[1200px] mt-[40px]'>
+            <div className='flex flex-col md:flex-row md:flex-wrap gap-[25px] w-full max-w-[1200px] mt-[40px]'>
                 
-                <div className='relative h-[380px] max-w-[350px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
-                    <img src={client1} className='absolute top-0 left-0 h-full w-auto object-cover'/>
-                    <div className='relative w-full h-full'>
+                <div className='relative h-[380px] w-full md:max-w-[350px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
+                    <img src={client1} className='absolute top-0 left-0 h-full w-full md:w-auto object-cover'/>
+                    <div className='relative w-full h-[80%] mt-[100px]'>
                         {blurLayers.map((layer, idx) => (
                             <div
-                            key={idx}
-                            style={{
-                                position: "absolute",
-                                inset: 0,
-                                zIndex: layer.zIndex,
-                                backdropFilter: `blur(${layer.blur})`,
-                                WebkitBackdropFilter: `blur(${layer.blur})`,
-                                maskImage: layer.mask,
-                                WebkitMaskImage: layer.mask,
-                                borderRadius: "12px",
-                                pointerEvents: "none"
-                            }}
+                                key={idx}
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    zIndex: layer.zIndex,
+                                    backdropFilter: `blur(${layer.blur})`,
+                                    WebkitBackdropFilter: `blur(${layer.blur})`,
+                                    maskImage: layer.mask,
+                                    WebkitMaskImage: layer.mask,
+                                    borderRadius: "12px",
+                                    pointerEvents: "none"
+                                }}
                             />
                         ))}
                     </div>
                 </div>
-                <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
+                <div className='relative h-[380px] w-full max-h-[380px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
                     <img src={client2} className='absolute top-0 left-0 w-full object-cover'/>
-                    <div className='relative w-full h-full'>
+                    <div className='relative w-full h-[80%] mt-[100px]'>
                         {blurLayers.map((layer, idx) => (
                             <div
-                            key={idx}
-                            style={{
-                                position: "absolute",
-                                inset: 0,
-                                zIndex: layer.zIndex,
-                                backdropFilter: `blur(${layer.blur})`,
-                                WebkitBackdropFilter: `blur(${layer.blur})`,
-                                maskImage: layer.mask,
-                                WebkitMaskImage: layer.mask,
-                                borderRadius: "12px",
-                                pointerEvents: "none"
-                            }}
+                                key={idx}
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    zIndex: layer.zIndex,
+                                    backdropFilter: `blur(${layer.blur})`,
+                                    WebkitBackdropFilter: `blur(${layer.blur})`,
+                                    maskImage: layer.mask,
+                                    WebkitMaskImage: layer.mask,
+                                    borderRadius: "12px",
+                                    pointerEvents: "none"
+                                }}
                             />
                         ))}
                     </div>
                 </div>
                 
-                <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
+                <div className='relative h-[380px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
                     <img src={client3} className='absolute top-0 left-0 w-full object-cover'/>
-                    <div className='relative w-full h-full'>
+                    <div className='relative w-full h-[80%] mt-[100px]'>
                         {blurLayers.map((layer, idx) => (
                             <div
-                            key={idx}
-                            style={{
-                                position: "absolute",
-                                inset: 0,
-                                zIndex: layer.zIndex,
-                                backdropFilter: `blur(${layer.blur})`,
-                                WebkitBackdropFilter: `blur(${layer.blur})`,
-                                maskImage: layer.mask,
-                                WebkitMaskImage: layer.mask,
-                                borderRadius: "12px",
-                                pointerEvents: "none"
-                            }}
+                                key={idx}
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    zIndex: layer.zIndex,
+                                    backdropFilter: `blur(${layer.blur})`,
+                                    WebkitBackdropFilter: `blur(${layer.blur})`,
+                                    maskImage: layer.mask,
+                                    WebkitMaskImage: layer.mask,
+                                    borderRadius: "12px",
+                                    pointerEvents: "none"
+                                }}
                             />
                         ))}
                     </div>
                 </div>
-                <div className='relative h-[380px] flex-[40%] shrink grow bg-amber-200 overflow-hidden rounded-[12px]'>
-                    <img src={client4} className='absolute top-0 left-0 w-full object-cover'/>
-                    <div className='relative w-full h-full'>
+                <div className='relative h-[380px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
+                    <img src={client4} className='absolute top-0 left-0 w-full h-full md:h-auto object-cover'/>
+                    <div className='relative w-full h-[80%] mt-[100px]'>
                         {blurLayers.map((layer, idx) => (
                             <div
-                            key={idx}
-                            style={{
-                                position: "absolute",
-                                inset: 0,
-                                zIndex: layer.zIndex,
-                                backdropFilter: `blur(${layer.blur})`,
-                                WebkitBackdropFilter: `blur(${layer.blur})`,
-                                maskImage: layer.mask,
-                                WebkitMaskImage: layer.mask,
-                                borderRadius: "12px",
-                                pointerEvents: "none"
-                            }}
+                                key={idx}
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    zIndex: layer.zIndex,
+                                    backdropFilter: `blur(${layer.blur})`,
+                                    WebkitBackdropFilter: `blur(${layer.blur})`,
+                                    maskImage: layer.mask,
+                                    WebkitMaskImage: layer.mask,
+                                    borderRadius: "12px",
+                                    pointerEvents: "none"
+                                }}
                             />
                         ))}
                     </div>
