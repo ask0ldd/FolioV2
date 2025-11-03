@@ -16,16 +16,13 @@ export default function Hero(){
     return (
         <section className='flex flex-col w-full pt-[40px] pb-[100px] items-center overflow-hidden'>
             <div className={'flex flex-row gap-x-[20px] items-center heroTextTransition' + (visible ? ' translate-x-[0px] opacity-100 delay1s' : ' translate-x-[-25px] opacity-0 delay1s')} >
-                <div className='h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] rounded-[16px] greyShadow askPic shrink-0'>
-                </div>
-                    <h1 className='instrument text-[40px] md:text-[72px] xl:text-[100px] w-fit leading-snug heroTextGradient'>I'm Cedric, UI Designer</h1>
-                </div>
-                <div className={'flex flex-row gap-x-[20px] items-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay1-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay1-5s')}>
+                <div className='h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] rounded-[16px] greyShadow askPic shrink-0'/>
+                <h1 className='instrument text-[40px] md:text-[72px] xl:text-[100px] w-fit leading-snug heroTextGradient'>I'm Cedric, UI Designer</h1>
+            </div>
+            <div className={'flex flex-row gap-x-[20px] items-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay1-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay1-5s')}>
                 <h1 className='instrument text-[40px] md:text-[72px] xl:text-[100px] w-fit leading-none heroTextGradient'>& Full Stack Developer</h1>
-                <div className='h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] bg-neutral-400 rounded-[16px] greyShadow cloudIcon shrink-0'>
-                </div>
-                <div className="h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] bg-neutral-400 rounded-[16px] greyShadow moonIcon shrink-0">
-                </div>
+                <div className='h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] bg-neutral-400 rounded-[16px] greyShadow cloudIcon shrink-0'/>
+                <div className="h-[56px] md:h-[68px] xl:h-[88px] w-[55px] md:w-[67px] xl:w-[86px] bg-neutral-400 rounded-[16px] greyShadow moonIcon shrink-0"/>
             </div>
             <span className={'mt-[15px] max-w-[434px] text-center' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2s')}>
             I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
