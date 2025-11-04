@@ -14,9 +14,9 @@ export default function KeyPoints(){
                     Services
                 </span>
             </div>
-            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] '>Crafting Digital Excellence</h2>
-            <span className='text-[14px] md:text-[16px] mt-[20px] text-center'>Building smooth and engaging digital interactions that elevate user satisfaction</span>
-            <div className='flex flex-col xl:flex-row flex-wrap gap-[25px] w-full md:max-w-[750px] xl:max-w-[1200px] mt-[32px] md:mt-[50px]'>
+            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Crafting Digital Excellence</h2>
+            <span className='text-[14px] md:text-[16px] mt-[24px] text-center'>Building smooth and engaging digital interactions that elevate user satisfaction</span>
+            <div className='flex flex-col xl:flex-row flex-wrap gap-[25px] w-full md:max-w-[750px] xl:max-w-[1200px] mt-[32px] md:mt-[46px]'>
 
                 {/*<div className='flex flex-col md:flex-row bg-[#F6FBFF] min-h-[265px] shrink grow flex-[50%] rounded-[20px] whiteBlockShadow p-[20px] gap-x-[20px]'>
                     <img src={ux1} className='flex flex-[55%] max-w-full md:max-w-[55%] w-full md:max-h-[fit] max-h-[225px] shrink grow object-cover rounded-[12px] imgKPShadow2'/>
@@ -70,7 +70,7 @@ export default function KeyPoints(){
                 <Keypoint style={{flex:'50%'}} text={'Creating visually compelling designs that truly resonate with your target audience and brand.'} title={'Design & Creativity'} icon={<WhiteIcon/>} image={ux2}/>
 
             </div>
-            <div className='flex gap-x-[15px] mt-[50px] translate-x-[0px] opacity-100 w-full md:w-fit'>
+            <div className='flex gap-x-[15px] mt-[50px] text-[14px] translate-x-[0px] opacity-100 w-full md:w-fit'>
                 <a href="#resume" className='w-full'>
                     <button className='blueButton text-[#FFFFFF] font-semibold hover:cursor-pointer w-full'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
