@@ -7,8 +7,8 @@ export default function KeyPoints(){
     return(
         <section className='flex flex-col w-full min-h-[100vh] items-center px-[18px] md:px-[40px] xl:px-[80px] py-[75px] md:py-[100px] bg-[#D8DFE5] rounded-t-[50px] md:rounded-t-[80px]'>
             <div className='flex text-[12px] md:text-[14px] px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
-                <span className='flex flex-row gap-x-[10px] justify-center items-center h-[36px] md:h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[20px] md:px-[30px] rounded-full'>
-                    <svg className='translate-y-[1px]' width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[36px] md:h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[20px] md:px-[30px] rounded-full'>
+                    <svg className='translate-y-[1px]' width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.8749 3.35784L7.98053 0.132667C7.82304 0.0456462 7.64605 0 7.46611 0C7.28618 0 7.10918 0.0456462 6.95169 0.132667L1.05729 3.35918C0.888956 3.45129 0.748438 3.58689 0.650409 3.75185C0.55238 3.9168 0.500436 4.10505 0.5 4.29693V10.7031C0.500436 10.895 0.55238 11.0832 0.650409 11.2482C0.748438 11.4131 0.888956 11.5487 1.05729 11.6408L6.95169 14.8673C7.10918 14.9544 7.28618 15 7.46611 15C7.64605 15 7.82304 14.9544 7.98053 14.8673L13.8749 11.6408C14.0433 11.5487 14.1838 11.4131 14.2818 11.2482C14.3798 11.0832 14.4318 10.895 14.4322 10.7031V4.2976C14.4321 4.10537 14.3804 3.91671 14.2823 3.75137C14.1843 3.58603 14.0436 3.45011 13.8749 3.35784ZM7.46611 6.96482L2.08412 4.01761L7.46611 1.07041L12.8481 4.01761L7.46611 6.96482ZM8.00197 13.6389V7.89117L13.3605 4.95871V10.7031L8.00197 13.6389Z" fill="#0E1C29"/>
                     </svg>
                     Services
