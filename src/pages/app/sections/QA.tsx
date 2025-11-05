@@ -4,8 +4,8 @@ export default function QA(){
     return(
         <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] bg-[#D8DFE5] px-[20px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
-                <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
-                    <svg viewBox="0 0 256 256" width={18} height={18} focusable="false" color="#0e1c29" style={{transform:'translateY(0.5px)'}}>
+                <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
+                    <svg viewBox="0 0 256 256" width={16} height={16} focusable="false" color="#0e1c29" style={{transform:'translateY(0.5px)'}}>
                         <g color="#0e1c29">
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,168a12,12,0,1,1,12-12A12,12,0,0,1,128,192Zm8-48.72V144a8,8,0,0,1-16,0v-8a8,8,0,0,1,8-8c13.23,0,24-9,24-20s-10.77-20-24-20-24,9-24,20v4a8,8,0,0,1-16,0v-4c0-19.85,17.94-36,40-36s40,16.15,40,36C168,125.38,154.24,139.93,136,143.28Z"></path>
                         </g>
@@ -23,7 +23,7 @@ export default function QA(){
                     </div>
                     <h3 className='text-[24px] text-[#0E1C29] font-medium mt-[17px] text-center'>Get In Touch Now!</h3>
                     <span className='text-[16px] text-[#0E1C29] text-center mt-[10px] opacity-85'>Still have questions? Feel free to get in touch with us today!</span>
-                    <button className='blueButton text-[#FFFFFF] font-semibold h-[48px] w-fit mt-[15px]'>
+                    <button className='blueButton text-[#FFFFFF] font-semibold h-[48px] w-fit mt-[15px] text-[14px]'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.125 0.999981V9.12473C12.1251 9.24841 12.0885 9.36934 12.0198 9.47221C11.9512 9.57508 11.8535 9.65526 11.7393 9.7026C11.625 9.74994 11.4993 9.76232 11.378 9.73817C11.2567 9.71401 11.1453 9.65441 11.0578 9.5669L7.43764 5.94592L1.9425 11.4418C1.82523 11.5591 1.66618 11.625 1.50033 11.625C1.33448 11.625 1.17543 11.5591 1.05815 11.4418C0.940883 11.3246 0.875 11.1655 0.875 10.9997C0.875 10.8338 0.940883 10.6748 1.05815 10.5575L6.55408 5.06236L2.9331 1.44216C2.84559 1.35475 2.78599 1.24334 2.76183 1.12204C2.73768 1.00074 2.75006 0.875005 2.7974 0.760744C2.84474 0.646484 2.92492 0.548839 3.02779 0.480172C3.13066 0.411505 3.25159 0.374903 3.37527 0.375H11.5C11.6658 0.375 11.8247 0.440846 11.9419 0.558053C12.0592 0.67526 12.125 0.834226 12.125 0.999981Z" fill="white"/>
                         </svg>
