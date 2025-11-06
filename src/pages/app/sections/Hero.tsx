@@ -28,7 +28,7 @@ export default function Hero(){
             I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
             </span>
 
-            <div className={'flex gap-x-[15px] mt-[30px] px-[20px] w-full md:max-w-[340px] md:px-0' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2-5s')}>
+            <div className={'flex gap-x-[15px] text-[14px] mt-[30px] px-[20px] w-full md:max-w-[340px] md:px-0' + (visible ? ' translate-x-[0px] opacity-100 heroTextTransition delay2-5s' : ' translate-x-[-25px] opacity-0 heroTextTransition delay2-5s')}>
                 <a href="#resume" className="w-full">
                     <button className='blueButton text-[#FFFFFF] font-semibold hover:cursor-pointer w-full'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,10 +38,10 @@ export default function Hero(){
                     </button>
                 </a>
                 <button className='greyButton font-semibold w-full'>
-                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mt-[2px]" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.013 7.44192L10.268 13.187C10.1806 13.2745 10.0692 13.3341 9.94789 13.3583C9.82659 13.3825 9.70085 13.3702 9.58658 13.3228C9.47231 13.2755 9.37464 13.1954 9.30595 13.0925C9.23726 12.9897 9.20063 12.8687 9.2007 12.7451L9.20125 7.62477L1.4294 7.62532C1.26355 7.62532 1.10449 7.55944 0.987223 7.44217C0.869951 7.3249 0.804068 7.16584 0.804068 7C0.804068 6.83415 0.869951 6.67509 0.987223 6.55782C1.10449 6.44055 1.26355 6.37467 1.4294 6.37467L9.20125 6.37522L9.2007 1.25493C9.20063 1.13125 9.23726 1.01033 9.30595 0.907476C9.37464 0.804624 9.47231 0.724465 9.58658 0.677148C9.70085 0.62983 9.82659 0.617482 9.94789 0.641666C10.0692 0.665849 10.1806 0.725478 10.268 0.813002L16.013 6.55807C16.1302 6.67527 16.1961 6.83424 16.1961 7C16.1961 7.16575 16.1302 7.32472 16.013 7.44192Z" fill="#0E1C29"/>
                     </svg>
-                    My Projects
+                    <span className="mt-[1px]">My Projects</span>
                 </button>
             </div>
 
