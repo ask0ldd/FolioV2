@@ -35,7 +35,7 @@ export default function CV(){
         <section id="resume" className="bg-[#E1E7EC] flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0">
             <div className="flex flex-col max-w-[1200px] w-full gap-x-[45px] gap-y-[25px] md:flex-row md:gap-y-0">
                 <div className="flex flex-col w-full md:w-[300px] h-fit shrink-0 grow-0 p-[25px] items-center bg-[#F6FBFF] rounded-[20px] whiteBlockShadow">
-                    <div className='CVPictureShadows w-full md:w-[252px] h-[265px] bg-neutral-400 rounded-[12px] askPic'/>
+                    <div className='CVPictureShadows w-[252px] md:w-[252px] h-[265px] bg-neutral-400 rounded-[12px] askPic'/>
                     <div className='flex flex-row gap-x-[10px] text-[14px] items-center mt-[23px]'>
                         <div className='bg-[#31EE33] rounded-full h-[11px] w-[11px] translate-y-[0px] activeMarker'/>
                         <span className='translate-y-[-1px]'>available for work</span>
