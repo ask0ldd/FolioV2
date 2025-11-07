@@ -3,10 +3,10 @@ import '../../../styles/Process.css'
 
 export default function Process(){
     return(
-        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0 bg-[#dde4e9]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
-                <span className='flex flex-row gap-x-[10px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
-                    <svg viewBox="0 0 256 256" width={18} height={18} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
+                <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
+                    <svg viewBox="0 0 256 256" width={16} height={16} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
                         <g color="#0e1c29">
                             <path d="M240,56V200a8,8,0,0,1-8,8H8a8,8,0,0,1,0-16H56V152a8,8,0,0,1,8-8h48V104a8,8,0,0,1,8-8h48V56a8,8,0,0,1,8-8h56A8,8,0,0,1,240,56Z"></path>
                         </g>
@@ -23,7 +23,7 @@ export default function Process(){
                 <ProcessStep step={4} title={'And Hand Over'} text={'Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing support.'}/>
             </div>
 
-            <div className='flex gap-x-[15px] mt-[50px] translate-x-[0px] opacity-100'>
+            <div className='flex gap-x-[15px] mt-[50px] translate-x-[0px] opacity-100 text-[14px]'>
                 <a href="#resume">
                     <button className='blueButton text-[#FFFFFF] font-semibold hover:cursor-pointer'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
