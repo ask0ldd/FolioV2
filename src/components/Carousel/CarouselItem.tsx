@@ -1,9 +1,11 @@
 import type { IRendererProps } from "./Carousel"
 import '../../styles/CarouselItem.css'
 import React from "react"
+import { Link } from "react-router"
 
 function CarouselItem({item} : IRendererProps<ICarouselItem>){
     return(
+        <Link to={"/project"}>
         <div className='flex flex-col shrink-0 w-[475px] opacity-100 h-full border-1 border-[#cBcDcE] hover:border-[#bBbDbE] rounded-[8px] pt-[16px] py-[15px] items-center hover:bg-[#DEE3E6ee] cursor-pointer'>
             <img className='carousselImg' alt="project 1 design" src={item.image}/>
             <span className='flex flex-row mt-[18px] justify-between w-full px-[15px]'>
@@ -13,6 +15,7 @@ function CarouselItem({item} : IRendererProps<ICarouselItem>){
                 </svg>
             </span>
         </div>
+        </Link>
     )
 }
 
