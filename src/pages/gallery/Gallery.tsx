@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import './App.css'
+import '../App.css'
 import { useEffect, useState } from 'react'
 
 function Gallery() {

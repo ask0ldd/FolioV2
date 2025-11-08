@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type FC } from "react"
-import '../../pages/app/App.css'
+import '../../pages/App.css'
 
 export default function Carousel<T>({visible, items, Renderer, speed = 0.2} : ICarouselProps<T> & {speed? : number}){
 

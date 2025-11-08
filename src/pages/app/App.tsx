@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import './App.css'
+import '../App.css'
 import design1 from '../../assets/design1.jpg'
 import { useEffect, useState } from 'react'
-import Carousel from '../../components/Carousel/Carousel'
-import CarouselItem from '../../components/Carousel/CarouselItem'
 import KeyPoints from './sections/KeyPoints'
 import CV from './sections/CV'
 import Comparison from './sections/Comparison'

@@ -1,4 +1,4 @@
-import '../App.css'
+import '../../App.css'
 import '../../../styles/Process.css'
 import '../../../styles/HappyClients.css'
 import client1 from '../../../assets/client1.png'

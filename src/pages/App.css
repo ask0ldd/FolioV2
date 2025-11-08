@@ -75,15 +75,15 @@
 }
 
 .cloudIcon {
-  background-image: url("../../assets/cloudIcon.jpg");
+  background-image: url("../assets/cloudIcon.jpg");
 }
 
 .moonIcon {
-  background-image: url("../../assets/moonIcon.jpg");
+  background-image: url("../assets/moonIcon.jpg");
 }
 
 .askPic {
-  background-image: url("../../assets/ced15-2.png");
+  background-image: url("../assets/ced15-2.png");
   background-size: cover;
   filter: saturate(0.95) brightness(1.1);
   opacity: 0.95;

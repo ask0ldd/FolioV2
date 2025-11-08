@@ -1,4 +1,4 @@
-import '../App.css'
+import '../../App.css'
 import '../../../styles/Process.css'
 
 export default function Process(){
