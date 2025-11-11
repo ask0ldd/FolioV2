@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import '../App.css'
-import design1 from '../../assets/design1.jpg'
 import { useEffect, useState } from 'react'
-
-const items = Array.from({ length: 8 }, () => ({ image: design1, title: "Portfoy", link: "" }))
+import Summary from './sections/Summary'
 
 function Project() {
 
@@ -47,7 +45,9 @@ function Project() {
             </div>
 
           </div>
-        </header>        
+        </header> 
+
+        <Summary/>       
       </div>
     </div>
   )
