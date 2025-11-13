@@ -13,7 +13,7 @@ function Project() {
   }, [])
 
   return (
-    <div className='flex flex-col bg-[rgb(216,223,229)] w-full min-h-[100vh]'>
+    <div className='flex flex-col bg-[rgb(216,223,229)] w-full min-h-[100vh] pb-[50px]'>
       <div className='flex flex-col w-full min-h-[100vh] items-center relative gap-y-[50px]'>
 
         <header className={visible ? 'flex w-full mx-auto justify-between h-[80px] translate-y-[0px] opacity-100 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0' : 'flex w-full justify-between h-[80px] translate-y-[-100px] opacity-0 items-center max-w-[1280px] z-10 headerTransition px-[20px] sm:px-[40px] xl:px-0'} >
@@ -44,7 +44,16 @@ function Project() {
 
         <Summary/> 
 
-        <div className='flex justify-center items-center padding-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff]'>
+        <div className='flex w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff]'>
+          <img src={screenshot1} className='rounded-[20px]'/>     
+        </div>
+
+        <div className='flex flex-col w-full max-w-[1280px] gap-y-[20px]'>
+          <span>The primary goal of <strong>Alter</strong> is to provide businesses with an intuitive and modern SaaS AI Framer template, seamlessly combining advanced features with a sleek and professional design—helping them capture leads and build anticipation for their products or services.</span>
+          <span>With its robust AI-powered features and user-friendly interface, <strong>Alter</strong> has redefined how businesses generate interest, engage with their audience, and streamline their SaaS growth.</span>
+        </div>
+
+        <div className='flex w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff]'>
           <img src={screenshot1} className='rounded-[20px]'/>     
         </div>
 
