@@ -3,6 +3,9 @@ import '../App.css'
 import { useEffect, useState } from 'react'
 import Summary from './sections/Summary'
 import screenshot1 from '../../assets/screenshot1.png'
+import screenshot2 from '../../assets/screenshot2.png'
+import screenshot3 from '../../assets/screenshot3.png'
+import screenshot4 from '../../assets/screenshot4.png'
 
 function Project() {
 
@@ -44,8 +47,8 @@ function Project() {
 
         <Summary/> 
 
-        <div className='flex w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff]'>
-          <img src={screenshot1} className='rounded-[20px]'/>     
+        <div className='flex overflow-hidden w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff] whiteBlockShadow'>
+          <img src={screenshot1} className='rounded-[20px] w-full h-[832px] object-cover'/>     
         </div>
 
         <div className='flex flex-col w-full max-w-[1280px] gap-y-[20px]'>
@@ -53,8 +56,20 @@ function Project() {
           <span>With its robust AI-powered features and user-friendly interface, <strong>Alter</strong> has redefined how businesses generate interest, engage with their audience, and streamline their SaaS growth.</span>
         </div>
 
-        <div className='flex w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff]'>
-          <img src={screenshot1} className='rounded-[20px]'/>     
+        <div className='flex overflow-hidden w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff] whiteBlockShadow'>
+          <img src={screenshot2} className='rounded-[20px] w-full h-[832px] object-cover'/>     
+        </div>
+
+        <div className='flex overflow-hidden w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff] whiteBlockShadow'>
+          <img src={screenshot3} className='rounded-[20px] w-full h-[832px] object-cover'/>     
+        </div>
+
+        <div className='flex overflow-hidden w-full justify-center items-center p-[16px] rounded-[20px] max-w-[1280px] bg-[#f6fbff] border-[#f6fbff] whiteBlockShadow'>
+          <img src={screenshot4} className='rounded-[20px] w-full h-[832px] object-cover'/>     
+        </div>
+
+        <div className='flex flex-col w-full max-w-[1280px] gap-y-[20px]'>
+          In conclusion, Alter is the ultimate solution for businesses and startups seeking a professional, feature-rich, and customizable SaaS AI Framer template. With its sleek design, advanced functionality, and ease of use, Alter allows businesses to attract and engage their audience effectively, setting the stage for successful product launches and growth.
         </div>
 
       </div>
