@@ -7,7 +7,7 @@ function MainRouter(){
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/project" element={<Project />} />
+                <Route path="/project/:id" element={<Project />} />
             </Routes>
         </BrowserRouter>
     )
