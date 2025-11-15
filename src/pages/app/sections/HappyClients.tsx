@@ -5,6 +5,10 @@ import client1 from '../../../assets/client1.png'
 import client2 from '../../../assets/client2.png'
 import client3 from '../../../assets/client3.png'
 import client4 from '../../../assets/client4.png'
+import avatar1 from '../../../assets/avatars/avatar1.png'
+import avatar2 from '../../../assets/avatars/avatar2.png'
+import avatar3 from '../../../assets/avatars/avatar3.png'
+import avatar4 from '../../../assets/avatars/avatar4.png'
 
 export default function HappyClients(){
     return(
@@ -110,6 +114,16 @@ export default function HappyClients(){
                     </div>
                 </div>
 
+            </div>
+
+            <div className='flex flex-row mt-[44px]'>
+                <div className='flex flex-row h-[28px]'>
+                    <img src={avatar1} className='rounded-full outline-2 outline-white'/>
+                    <img src={avatar2} className='rounded-full outline-2 outline-white'/>
+                    <img src={avatar3} className='rounded-full outline-2 outline-white'/>
+                    <img src={avatar4} className='rounded-full outline-2 outline-white'/>
+                </div>
+                <span>Trusted by 5,000 + innovators worldwide</span>
             </div>
 
         </section>
