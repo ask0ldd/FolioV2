@@ -16,7 +16,7 @@ export default function Process(){
             </div>
             <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
             <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
-            <div className='flex flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
+            <div className='flex flex-col md:flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
                 <ProcessStep step={1} title={'Let\'s Get In Touch'} text={'Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.'}/>
                 <ProcessStep step={2} title={'Grab Your Designs'} text={'Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals.'}/>
                 <ProcessStep step={3} title={'Kickstart Development'} text={'I expertly transform your designs into a powerful, scalable solution, fully ready to launch.'}/>
