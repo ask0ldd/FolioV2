@@ -116,12 +116,12 @@ export default function HappyClients(){
 
             </div>
 
-            <div className='flex flex-row mt-[44px]'>
+            <div className='flex flex-row mt-[44px] gap-x-[16px]'>
                 <div className='flex flex-row h-[28px]'>
-                    <img src={avatar1} className='rounded-full outline-2 outline-white'/>
-                    <img src={avatar2} className='rounded-full outline-2 outline-white'/>
-                    <img src={avatar3} className='rounded-full outline-2 outline-white'/>
-                    <img src={avatar4} className='rounded-full outline-2 outline-white'/>
+                    <img src={avatar1} className='rounded-full outline-2 outline-white HappyClientsAvatarsShadows'/>
+                    <img src={avatar2} className='rounded-full outline-2 outline-white ml-[-4px] HappyClientsAvatarsShadows'/>
+                    <img src={avatar3} className='rounded-full outline-2 outline-white ml-[-4px] HappyClientsAvatarsShadows'/>
+                    <img src={avatar4} className='rounded-full outline-2 outline-white ml-[-4px] HappyClientsAvatarsShadows'/>
                 </div>
                 <span>Trusted by 5,000 + innovators worldwide</span>
             </div>
