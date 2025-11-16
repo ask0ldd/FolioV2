@@ -3,8 +3,8 @@ import '../../../styles/Process.css'
 
 export default function Process(){
     return(
-        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] md:px-0 bg-[#dde4e9]'>
-            <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
+        <section className='flex flex-col w-full min-h-[100vh] items-center px-[18px] md:px-[40px] xl:px-[80px] py-[75px] md:py-[100px] bg-[#dde4e9]'>
+            <div className='flex text-[12px] md:text-[14px] px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={16} height={16} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
                         <g color="#0e1c29">
@@ -14,7 +14,7 @@ export default function Process(){
                     Services
                 </span>
             </div>
-            <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
+            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>From Vision to Execution</h2>
             <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
             <div className='flex flex-col md:flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
                 <ProcessStep step={1} title={'Let\'s Get In Touch'} text={'Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.'}/>
