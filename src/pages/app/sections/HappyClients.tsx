@@ -23,14 +23,14 @@ export default function HappyClients(){
                     Services
                 </span>
             </div>
-            <h2 className='dm-sans text-[56px] mt-[12px]'>From Vision to Execution</h2>
-            <span className='mt-[20px]'>A refined design process that ensures consistency, creativity for every project.</span>
+            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Hear from Satisfied Clients</h2>
+            <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>Discover how clients have elevated their digital presence through expert designs.</span>
             
             <div className='flex flex-col md:flex-row md:flex-wrap gap-[25px] w-full max-w-[1200px] mt-[40px]'>
                 
                 <div className='relative h-[380px] w-full md:max-w-[350px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
                     <img src={client1} className='absolute top-0 left-0 h-full w-full md:w-auto object-cover'/>
-                    <div className='relative w-full h-[80%] mt-[100px]'>
+                    <div className='relative flex flex-col w-full h-[80%] mt-[100px] z-10'>
                         {blurLayers.map((layer, idx) => (
                             <div
                                 key={idx}
@@ -47,6 +47,11 @@ export default function HappyClients(){
                                 }}
                             />
                         ))}
+                    </div>
+                    <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
+                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Product Design</span>
+                        <span className='text-[36px] mt-[7px]'>NeuroScope</span>
+                        <span>Exceptional craftsmanship transformed our ideas into reality</span>
                     </div>
                 </div>
                 <div className='relative h-[380px] w-full max-h-[380px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
@@ -68,6 +73,11 @@ export default function HappyClients(){
                                 }}
                             />
                         ))}
+                    </div>
+                    <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
+                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Product Design</span>
+                        <span className='text-[36px] mt-[7px]'>NeuroScope</span>
+                        <span>Exceptional craftsmanship transformed our ideas into reality</span>
                     </div>
                 </div>
                 
