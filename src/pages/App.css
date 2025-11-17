@@ -281,3 +281,7 @@ section {
     rgba(16, 49, 77, 0.16) 0px 13.6468px 13.6468px -2.91667px,
     rgba(16, 49, 77, 0.09) 0px 30px 30px -3.5px;
 }
+
+.HappyClientsInnerWhiteShadows {
+  box-shadow: rgba(255, 255, 255, 0.75) 1px 1px 15px 0px inset;
+}
