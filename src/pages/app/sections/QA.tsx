@@ -13,8 +13,8 @@ export default function QA(){
                     FAQS
                 </span>
             </div>
-            <h2 className='dm-sans text-[56px] mt-[12px]'>Questions? Answers!</h2>
-            <span className='mt-[20px]'>Find quick answers to the most common questions about the services offered</span>
+            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Questions? Answers!</h2>
+            <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>Find quick answers to the most common questions about the services offered</span>
             <div className='flex flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px] flex-col md:flex-row'>
                 
                 <div className="flex flex-col flex-[35%] shrink grow bg-[#F6FBFF] items-center h-fit rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
