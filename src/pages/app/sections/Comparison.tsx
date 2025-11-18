@@ -9,8 +9,8 @@ export default function Comparison(){
                     Comparison
                 </span>
             </div>
-            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Precision vs Basic</h2>
-            <span className='text-[14px] md:text-[16px] mt-[24px] text-center'>Precision-driven design and animations, surpassing static and unengaging layouts.</span>
+            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[22px] md:mt-[28px]'>Precision vs Basic</h2>
+            <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>Precision-driven design and animations, surpassing static and unengaging layouts.</span>
             <div className='flex flex-col md:flex-row flex-wrap gap-x-[25px] gap-y-[25px] w-full max-w-[900px] mt-[32px] md:mt-[46px]'>
                 <div className="flex flex-col flex-[40%] shrink grow bg-[#F6FBFF] rounded-[16px] pt-[15px] pb-[25px] px-[30px] whiteBlockShadow">
                     <h3 className="dm-sans text-[36px] text-center">Me</h3>
