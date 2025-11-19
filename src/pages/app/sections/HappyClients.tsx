@@ -12,7 +12,7 @@ import avatar4 from '../../../assets/avatars/avatar4.png'
 
 export default function HappyClients(){
     return(
-        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px]'>
+        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] bg-[#dde4e9]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={16} height={16} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
@@ -75,7 +75,7 @@ export default function HappyClients(){
                         ))}
                     </div>
                     <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
-                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Product Design</span>
+                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Digital Branding</span>
                         <span className='text-[36px] mt-[7px]'>NeuroScope</span>
                         <span>Exceptional craftsmanship transformed our ideas into reality</span>
                     </div>
@@ -101,6 +101,11 @@ export default function HappyClients(){
                             />
                         ))}
                     </div>
+                    <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
+                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>UI/UX Design</span>
+                        <span className='text-[36px] mt-[7px]'>NeuroScope</span>
+                        <span>A perfect blend of creativity and functionality exceeded expectations</span>
+                    </div>
                 </div>
                 <div className='relative h-[380px] md:flex-[40%] md:shrink md:grow bg-amber-200 overflow-hidden rounded-[12px] greyShadow'>
                     <img src={client4} className='absolute top-0 left-0 w-full h-full md:h-auto object-cover'/>
@@ -121,6 +126,11 @@ export default function HappyClients(){
                                 }}
                             />
                         ))}
+                    </div>
+                    <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
+                        <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Interface Design</span>
+                        <span className='text-[36px] mt-[7px]'>LumiSphere<span className='font-extralight'>®</span></span>
+                        <span>Brilliant design and meticulous execution shine effortlessly made our ideas</span>
                     </div>
                 </div>
 
