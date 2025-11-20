@@ -9,6 +9,7 @@ import Process from './sections/Process'
 import QA from './sections/QA'
 import HappyClients from './sections/HappyClients'
 import Hero from './sections/Hero'
+import TellMeAbout from './sections/TellMeAbout'
 
 const items = Array.from({ length: 8 }, () => ({ image: design1, title: "Portfoy", link: "" }))
 
@@ -64,6 +65,7 @@ function App() {
         <Process/>
         <QA/>
         <HappyClients/>
+        <TellMeAbout/>
         
       </div>
     </div>
