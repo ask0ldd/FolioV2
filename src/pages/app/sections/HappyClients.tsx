@@ -76,8 +76,8 @@ export default function HappyClients(){
                     </div>
                     <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
                         <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>Digital Branding</span>
-                        <span className='text-[36px] mt-[7px]'>NeuroScope</span>
-                        <span>Exceptional craftsmanship transformed our ideas into reality</span>
+                        <span className='text-[36px] mt-[7px]'>NovaWorks<span className='font-extralight'>®</span></span>
+                        <span>Impecable design and precision turned our ideas into stunning reality</span>
                     </div>
                 </div>
                 
@@ -103,7 +103,7 @@ export default function HappyClients(){
                     </div>
                     <div className='absolute top-0 left-0 flex flex-col justify-end text-white z-20 p-[36px] h-full'>
                         <span className='text-[12px] HappyClientsInnerWhiteShadows px-[10px] py-[6px] rounded-full w-fit'>UI/UX Design</span>
-                        <span className='text-[36px] mt-[7px]'>NeuroScope</span>
+                        <span className='text-[36px] mt-[7px]'>CosmoVision™</span>
                         <span>A perfect blend of creativity and functionality exceeded expectations</span>
                     </div>
                 </div>
