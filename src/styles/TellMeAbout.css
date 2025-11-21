@@ -1,0 +1,24 @@
+.handshakeIcon {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  fill: var(--token-d4c0a0e6-8fba-45bc-8f6f-215e608cd0df, rgb(255, 255, 255));
+  color: var(--token-d4c0a0e6-8fba-45bc-8f6f-215e608cd0df, rgb(255, 255, 255));
+  flex-shrink: 0;
+}
+
+.handshakeIconContainer {
+  background: linear-gradient(
+    rgba(94, 120, 143, 0.5) -38%,
+    rgb(14, 28, 41) 41%
+  );
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1.34368px 0.537473px -0.625px,
+    rgba(0, 0, 0, 0.09) 0px 3.18477px 1.27391px -1.25px,
+    rgba(0, 0, 0, 0.08) 0px 5.80935px 2.32374px -1.875px,
+    rgba(0, 0, 0, 0.08) 0px 9.65802px 3.86321px -2.5px,
+    rgba(0, 0, 0, 0.07) 0px 15.5969px 6.23877px -3.125px,
+    rgba(0, 0, 0, 0.06) 0px 25.5306px 10.2122px -3.75px,
+    rgba(0, 0, 0, 0.04) 0px 43.962px 17.5848px -4.375px,
+    rgba(0, 0, 0, 0) 0px 80px 32px -5px;
+}
