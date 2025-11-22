@@ -14,7 +14,7 @@ export default function Process(){
                     Services
                 </span>
             </div>
-            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>From Vision to Execution</h2>
+            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[20px] md:mt-[28px]'>From Vision to Execution</h2>
             <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>A refined design process that ensures consistency, creativity for every project.</span>
             <div className='flex flex-col md:flex-row flex-wrap gap-[25px] w-full max-w-[1000px] mt-[40px]'>
                 <ProcessStep step={1} title={'Let\'s Get In Touch'} text={'Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.'}/>
