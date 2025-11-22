@@ -12,7 +12,7 @@ import avatar4 from '../../../assets/avatars/avatar4.png'
 
 export default function HappyClients(){
     return(
-        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] px-[20px] bg-[#dde4e9]'>
+        <section className='flex flex-col w-full items-center bg-[#dde4e9] px-[18px] md:px-[40px] xl:px-[80px] py-[75px] md:py-[100px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={16} height={16} style={{transform:'translateY(1px)'}} focusable="false" color="#0e1c29">
@@ -23,7 +23,7 @@ export default function HappyClients(){
                     Services
                 </span>
             </div>
-            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Hear from Satisfied Clients</h2>
+            <h2 className='dm-sans text-[36px] leading-[3rem] text-center md:text-[44px] xl:text-[56px] mt-[20px] md:mt-[28px]'>Hear from Satisfied Clients</h2>
             <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>Discover how clients have elevated their digital presence through expert designs.</span>
             
             <div className='flex flex-col md:flex-row md:flex-wrap gap-[25px] w-full max-w-[1200px] mt-[40px]'>
