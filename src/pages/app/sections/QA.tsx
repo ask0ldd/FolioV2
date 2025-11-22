@@ -2,7 +2,7 @@ import '../../App.css'
 
 export default function QA(){
     return(
-        <section className='flex flex-col w-full items-center py-[70px] md:py-[100px] bg-[#D8DFE5] px-[20px]'>
+        <section className='flex flex-col w-full items-center bg-[#D8DFE5] px-[18px] md:px-[40px] xl:px-[80px] py-[75px] md:py-[100px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
                 <span className='flex flex-row gap-x-[10px] text-[14px] justify-center items-center h-[40px] bg-[#EFF8FF] border-1 border-[#D8DFE5] px-[30px] rounded-full'>
                     <svg viewBox="0 0 256 256" width={16} height={16} focusable="false" color="#0e1c29" style={{transform:'translateY(0.5px)'}}>
@@ -13,7 +13,7 @@ export default function QA(){
                     FAQS
                 </span>
             </div>
-            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[12px] md:mt-[28px]'>Questions? Answers!</h2>
+            <h2 className='dm-sans text-[36px] leading-[2rem] text-center md:text-[44px] xl:text-[56px] mt-[20px] md:mt-[28px]'>Questions? Answers!</h2>
             <span className='text-[14px] md:text-[16px] mt-[18px] md:mt-[24px] text-center'>Find quick answers to the most common questions about the services offered</span>
             <div className='flex flex-wrap gap-x-[25px] w-full max-w-[1000px] mt-[40px] flex-col md:flex-row'>
                 
