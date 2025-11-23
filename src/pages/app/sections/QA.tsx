@@ -1,6 +1,11 @@
+import { useState } from 'react'
 import '../../App.css'
+import { QUESTIONS } from '../constants/questions'
 
 export default function QA(){
+
+    const [activeQ, setActiveQ] = useState(0)
+
     return(
         <section className='flex flex-col w-full items-center bg-[#D8DFE5] px-[18px] md:px-[40px] xl:px-[80px] py-[75px] md:py-[100px]'>
             <div className='flex px-[2px] py-[2px] bg-[#EFF8FF] rounded-full'>
@@ -33,11 +38,15 @@ export default function QA(){
 
                 <div className="flex flex-col flex-[60%] shrink grow h-fit gap-y-[15px] mt-[15px] md:mt-0">
 
-                    <QAPair question={"What services do you offer?"} answer={"I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs."}/>
-                    <QAPair question={"Do you provide revisions?"} answer={"Yes! I offer two free rounds of revisions to ensure the final design meets your vision perfectly. Additional revisions are available if needed."}/>
-                    <QAPair question={"How do I start working with you??"} answer={"Simply reach out through my contact page, and we’ll discuss your project, goals, and timeline before getting started."}/>
-                    <QAPair question={"What is your pricing structure?"} answer={"Pricing depends on the project scope. Contact me for a custom quote based on your needs and budget."}/>
-                    <QAPair question={"How long does a project take?"} answer={"Timelines vary based on project complexity, but most designs take 1–3 weeks, while full websites take 3–6 weeks."}/>
+                    {QUESTIONS.map((question, idx) => (
+                        <QAPair onToggle={() => setActiveQ(idx)} active={activeQ == idx} question={question.question} answer={question.answer}/>
+                    ))}
+
+                    {/*<QAPair onToggle={() => setActiveQ(0)} active={activeQ == 0} question={"What services do you offer?"} answer={"I specialize in web design, branding, UI/UX, and Framer development, creating modern, user-friendly experiences tailored to your needs."}/>
+                    <QAPair onToggle={() => setActiveQ(1)} active={activeQ == 1} question={"Do you provide revisions?"} answer={"Yes! I offer two free rounds of revisions to ensure the final design meets your vision perfectly. Additional revisions are available if needed."}/>
+                    <QAPair onToggle={() => setActiveQ(2)} active={activeQ == 2} question={"How do I start working with you??"} answer={"Simply reach out through my contact page, and we’ll discuss your project, goals, and timeline before getting started."}/>
+                    <QAPair onToggle={() => setActiveQ(3)} active={activeQ == 3} question={"What is your pricing structure?"} answer={"Pricing depends on the project scope. Contact me for a custom quote based on your needs and budget."}/>
+                    <QAPair onToggle={() => setActiveQ(4)} active={activeQ == 4} question={"How long does a project take?"} answer={"Timelines vary based on project complexity, but most designs take 1–3 weeks, while full websites take 3–6 weeks."}/>*/}
 
                 </div>
             </div>
@@ -45,18 +54,25 @@ export default function QA(){
     )
 }
 
-function QAPair({question, answer} : {question : string, answer : string}){
+function QAPair({question, answer, active, onToggle} : IQAPair){
     return(
-        <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow">
+        <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow" onClick={onToggle}>
             <div className="flex flex-row justify-between h-[48px] items-center">
-                <span className="text-[16px] text-[#0e1c43] font-semibold">{question}</span>
+                <span className={"text-[16px] text-[#0e1c43] " + active ? "font-semibold" : "font-light"}>{question}</span>
                 <svg width={20} height={20} xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 256 256" 
                     focusable="false" 
                     color="var(--token-6396e7f2-0645-4f69-9a36-80e94f8ee015, rgb(14, 28, 41))" 
                 ><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
                 </div>
-            <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px] opacity-85">{answer}</span>
+            {active && <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px] opacity-85">{answer}</span>}
         </div>
     )
+}
+
+interface IQAPair {
+    question : string, 
+    answer : string, 
+    active : boolean, 
+    onToggle : () => void
 }
