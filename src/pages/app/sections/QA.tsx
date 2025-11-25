@@ -51,7 +51,7 @@ export default function QA(){
 
 function QAPair({question, active, onToggle} : IQAPair){
     return(
-        <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow" onClick={onToggle}>
+        <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow cursor-pointer" onClick={onToggle}>
             <div className="flex flex-row justify-between h-[48px] items-center">
                 <span className={"text-[16px] text-[#0e1c43] " + (active ? "font-semibold" : "font-normal")}>{question.question}</span>
                 <svg width={20} height={20} xmlns="http://www.w3.org/2000/svg" 
