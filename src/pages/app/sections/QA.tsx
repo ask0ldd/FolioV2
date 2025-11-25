@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../../App.css'
 import { QUESTIONS } from '../constants/questions'
+import type { Question } from '../types/TQuestion'
 
 export default function QA(){
 
@@ -39,7 +40,7 @@ export default function QA(){
                 <div className="flex flex-col flex-[60%] shrink grow h-fit gap-y-[15px] mt-[15px] md:mt-0">
 
                     {QUESTIONS.map((question, idx) => (
-                        <QAPair onToggle={() => setActiveQ(idx)} active={activeQ == idx} question={question.question} answer={question.answer}/>
+                        <QAPair onToggle={() => setActiveQ(idx)} active={activeQ == idx} question={question}/>
                     ))}
 
                 </div>
@@ -48,25 +49,24 @@ export default function QA(){
     )
 }
 
-function QAPair({question, answer, active, onToggle} : IQAPair){
+function QAPair({question, active, onToggle} : IQAPair){
     return(
         <div className="flex flex-col bg-[#F6FBFF] rounded-[10px] px-[20px] whiteBlockShadow" onClick={onToggle}>
             <div className="flex flex-row justify-between h-[48px] items-center">
-                <span className={"text-[16px] text-[#0e1c43] " + active ? "font-semibold" : "font-light"}>{question}</span>
+                <span className={"text-[16px] text-[#0e1c43] " + (active ? "font-semibold" : "font-normal")}>{question.question}</span>
                 <svg width={20} height={20} xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 256 256" 
                     focusable="false" 
                     color="var(--token-6396e7f2-0645-4f69-9a36-80e94f8ee015, rgb(14, 28, 41))" 
                 ><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
                 </div>
-            {active && <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px] opacity-85">{answer}</span>}
+            {active && <span className="text-[14px] text-[#0E1C29] font-normal pb-[15px] opacity-85">{question.answer}</span>}
         </div>
     )
 }
 
 interface IQAPair {
-    question : string, 
-    answer : string, 
+    question : Question, 
     active : boolean, 
     onToggle : () => void
 }
