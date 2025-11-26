@@ -22,3 +22,19 @@
     rgba(0, 0, 0, 0.04) 0px 43.962px 17.5848px -4.375px,
     rgba(0, 0, 0, 0) 0px 80px 32px -5px;
 }
+
+.bouncingIcon {
+  animation: up-down 2s ease-in-out infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
